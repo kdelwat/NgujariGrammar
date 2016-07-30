@@ -2,7 +2,9 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         node_pandoc: {
-            options: {},
+            options: {
+                flags: '--filter ./filter.py'
+            },
             target: {
                 expand: true,
                 cwd: 'src/content/',
@@ -24,6 +26,7 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-node-pandoc');
+    grunt.loadNpmTasks('grunt-sass')
 
     grunt.registerTask('default', ['node_pandoc', 'sass']);
 }

@@ -4,15 +4,9 @@ Syntax
 Alignment
 ---------
 
-(@good)  This is a good example.
-         It has multiple lines.
+(@good)  This is a good example,
+         It has multiple lines,
          There is one more line.
-
-~~~~ {good}
-This is a good example.
-It has multiple lines.
-There is one more line.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The alignment of Ngujari depends on whether the noun in question is an
 animate pronoun or not. For clauses with exclusively animate pronouns,
