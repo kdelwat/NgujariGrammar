@@ -10,6 +10,16 @@ module.exports = function(grunt) {
                 dest: 'build/content/',
                 ext: '.html'
             }
+        },
+        sass: {
+            options: {
+                sourceMap: true
+            },
+            dist: {
+                files: {
+                    'build/css/main.css': 'src/css/main.scss'
+                }
+            }
         }
     });
 
