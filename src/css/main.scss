@@ -3,6 +3,7 @@ $background-colour: #F5F4F7;
 $example-colour: #D9D9DB;
 $rule-colour: #FFC99B;
 $text-colour: #303030;
+$highlight-colour: #FF8011;
 
 //Layout definitions
 $body-width: 600px;
@@ -80,4 +81,13 @@ body {
 
 .example-tag {
     @include tag($example-colour, $background-colour);
+}
+
+a {
+    text-decoration: none;
+    color: $text-colour;
+    background-color: $rule-colour;
+    border-radius: 50px;
+    padding: 2px 5px 2px 5px;
+    font-size: $body-font-size - 2;
 }
