@@ -11,6 +11,6 @@
   "devDependencies": {
     "grunt": "~1.0.1",
     "grunt-contrib-jshint": "~1.0.0",
-    "grunt-markdown": "~0.7.0"
+    "grunt-node-pandoc": "~0.1.1"
   }
 }
