@@ -22,13 +22,31 @@ module.exports = function(grunt) {
                     'build/css/main.css': 'src/css/main.scss'
                 }
             }
+        },
+        uglify: {
+            options: {},
+            dist: {
+                files: {
+                    'build/js/main.js': 'src/js/main.js'
+                }
+            }
+        },
+        jshint: {
+            options: {},
+            dist: {
+                files: {
+                    'build/js/main.js': 'src/js/main.js'
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-node-pandoc');
-    grunt.loadNpmTasks('grunt-sass')
+    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-jshint')
 
-    grunt.registerTask('default', ['node_pandoc', 'sass']);
+    grunt.registerTask('default', ['node_pandoc', 'sass', 'uglify', 'jshint']);
 }
 
 
