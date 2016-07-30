@@ -8,8 +8,8 @@ The alignment of Ngujari depends on whether the noun in question is an animate
 pronoun or not. For clauses with exclusively animate pronouns, the alignment is
 nominative-accusative, but otherwise it is ergative-nominative (i.e. the
 transitive patient and intransitive object are marked nominative and the
-transitive agent is marked ergative). This system applies only to intransitive
-and transitive verbs. For higher valencies, formed through [valence
+transitive agent is marked ergative). This system applies only to `wa`
+intransitive and transitive verbs. For higher valencies, formed through [valence
 modification](#valencemod), the extra arguments are assigned cases semantically.
 
   case           word       meaning

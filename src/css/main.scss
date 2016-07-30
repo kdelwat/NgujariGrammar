@@ -141,3 +141,18 @@ caption {
     font-weight: bold;
     padding-bottom: 10px;
 }
+
+.word {
+    position: relative;
+}
+
+.word .definition {
+    display: none;
+}
+
+.word:hover .definition {
+    display: block;
+    position: absolute;
+    background-color: black;
+    left: 5px;
+}

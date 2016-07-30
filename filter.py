@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 from __future__ import unicode_literals
-from pandocfilters import toJSONFilter, RawBlock
-
+from pandocfilters import toJSONFilter, RawBlock, Para, Str, RawInline
+import csv
 
 def shrink_list(pandoc_list):
     '''Convert crazy pandoc nested list of Str and Space into
@@ -42,6 +42,37 @@ def create_rule(rule_list):
     return RawBlock('html', html)
 
 
+def lookup_definition(word):
+    with open('lexicon.csv', 'r') as f:
+        for line in csv.DictReader(f):
+            if line['Conword'] == word:
+                return line
+
+    return False
+
+
+def create_definition(item):
+    word = item['c'][1].strip()
+    definition = lookup_definition(word)
+
+    if definition == False:
+        return Str(word)
+
+    html = '<span class="word">{0}<span class="definition">{1}</span></span>'.format(word, definition['Local'])
+    return RawInline('html', html)
+
+
+def filter_paragraph(paragraph):
+    filtered = []
+    for item in paragraph:
+        if item['t'] == 'Code':
+            filtered.append(create_definition(item))
+
+        else:
+            filtered.append(item)
+    return Para(filtered)
+
+
 def filter(key, value, format, meta):
     if key == 'OrderedList':
         if value[0][1]['t'] == 'Example':
@@ -51,6 +82,8 @@ def filter(key, value, format, meta):
         if value[0]['t'] == 'Str':
             if value[0]['c'][0:3] == '(*)':
                 return create_rule(value)
+
+        return filter_paragraph(value)
 
     #return RawBlock('html', str(key) + ' ' + str(value))
 
