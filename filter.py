@@ -58,7 +58,7 @@ def create_definition(item):
     if definition == False:
         return Str(word)
 
-    html = '<span class="word">{0}<span class="definition">{1}</span></span>'.format(word, definition['Local'])
+    html = '<span class="word">{0}<span class="definition">{1}<br><span class="full-definition">{2}</span></span></span>'.format(word, definition['Local'], definition['Definitions'])
     return RawInline('html', html)
 
 

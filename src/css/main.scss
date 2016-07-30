@@ -152,14 +152,24 @@ caption {
 }
 
 .word:hover .definition {
-    display: inline;
-    position: absolute;
+    display: inline-block;
     background-color: $rule-colour;
 
+    position: absolute;
     margin-left: 2px;
     padding-left: 4px;
     padding-right: 4px;
+    width: 10em;
+    border-radius: 10px;
 
-    border-radius: 50px;
     font-size: $body-font-size - 2;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.full-definition {
+    font-size: $body-font-size - 4;
+    font-style: italic;
+    font-weight: normal;
+    text-align: justify;
 }
