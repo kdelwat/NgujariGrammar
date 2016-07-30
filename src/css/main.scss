@@ -1,5 +1,59 @@
-$background-colour: #D6D4DB;
+// Colour definitions
+$background-colour: #F5F4F7;
+$example-colour: #D9D9DB;
+$rule-colour: #FFC99B;
+$text-colour: #303030;
+
+//Layout definitions
+$body-width: 600px;
+
+//Typography definitions
+$body-font-size: 16px;
 
 html{
     background: $background-colour;
+}
+
+body {
+    margin: 0 auto 10px auto;
+    max-width: $body-width;
+    font-family: sans-serif;
+    font-size: $body-font-size;
+    line-height: 1.5;
+    color: $text-colour;
+}
+
+@mixin boxed($colour) {
+    background: $colour;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-left: 4px solid darken($colour, 30%);
+    border-bottom: 1px solid darken($colour, 10%);
+}
+.example {
+    @include boxed($example-colour);
+}
+
+.example-target {
+    font-size: $body-font-size + 2;
+}
+
+.example-gloss {
+    font-variant: small-caps;
+}
+
+.example-native {
+    font-style: italic;
+}
+
+.rule {
+    @include boxed($rule-colour);
+}
+.rule-name {
+    font-size: $body-font-size + 2;
+}
+
+.rule-definition {
+    font-variant: small-caps;
 }
