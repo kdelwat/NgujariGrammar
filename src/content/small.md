@@ -51,8 +51,8 @@ followed by adjectives, although this can be inverted or even mixed
 according to pragmatic considerations. However, relative clauses always
 succeed the noun and adjectives.
 
-birru-ø birruku miinna
-    sea-ERG blue big
+(@) birru-ø birruku miinna,
+    sea-ERG blue big,
     vast blue sea
 
 (@) kanaama yirlirna-j gu,

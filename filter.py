@@ -17,11 +17,17 @@ def shrink_list(pandoc_list):
 
 
 def create_example(example_list):
-    examples = [line.strip() for line in shrink_list(example_list).split(',')]
-    target = '<div class="example-target">{0}</div>'.format(examples[0])
-    gloss = '<div class="example-gloss">{0}</div>'.format(examples[1])
-    native = '<div class="example-native">{0}</div>'.format(examples[2])
-    html = '<div class="example">' + target + gloss + native + '</div>'
+    all_examples = []
+
+    for example in example_list:
+        examples = [line.strip() for line in shrink_list(example[0]['c']).split(',')]
+        target = '<div class="example-target">{0}</div>'.format(examples[0])
+        gloss = '<div class="example-gloss">{0}</div>'.format(examples[1])
+        native = '<div class="example-native">{0}</div>'.format(examples[2])
+        all_examples.append(target + gloss + native)
+
+    html = '<div class="example">' + '<br>'.join(all_examples) + '</div>'
+
     return RawBlock('html', html)
 
 
@@ -37,7 +43,8 @@ def create_rule(rule_list):
 def filter(key, value, format, meta):
     if key == 'OrderedList':
         if value[0][1]['t'] == 'Example':
-            return create_example(value[1][0][0]['c'])
+            #return RawBlock('html', str(value))
+            return create_example(value[1:][0])
     elif key == 'Para':
         if value[0]['t'] == 'Str':
             if value[0]['c'][0:3] == '(*)':
