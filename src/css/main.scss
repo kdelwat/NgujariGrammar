@@ -144,6 +144,7 @@ caption {
 
 .word {
     position: relative;
+    font-style: italic;
 }
 
 .word .definition {
@@ -151,8 +152,14 @@ caption {
 }
 
 .word:hover .definition {
-    display: block;
+    display: inline;
     position: absolute;
-    background-color: black;
-    left: 5px;
+    background-color: $rule-colour;
+
+    margin-left: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    border-radius: 50px;
+    font-size: $body-font-size - 2;
 }
