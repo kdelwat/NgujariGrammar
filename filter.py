@@ -16,7 +16,7 @@ def shrink_list(pandoc_list):
     return string
 
 
-def create_example(example_list):
+def create_example(example_no, example_list):
     all_examples = []
 
     for example in example_list:
@@ -26,7 +26,8 @@ def create_example(example_list):
         native = '<div class="example-native">{0}</div>'.format(examples[2])
         all_examples.append(target + gloss + native)
 
-    html = '<div class="example">' + '<br>'.join(all_examples) + '</div>'
+    example_id = 'example-' + str(example_no)
+    html = '<div class="example" id="{0}">{1}</div>'.format(example_id, '<br>'.join(all_examples))
 
     return RawBlock('html', html)
 
@@ -44,7 +45,7 @@ def filter(key, value, format, meta):
     if key == 'OrderedList':
         if value[0][1]['t'] == 'Example':
             #return RawBlock('html', str(value))
-            return create_example(value[1:][0])
+            return create_example(value[0][0], value[1:][0])
     elif key == 'Para':
         if value[0]['t'] == 'Str':
             if value[0]['c'][0:3] == '(*)':
