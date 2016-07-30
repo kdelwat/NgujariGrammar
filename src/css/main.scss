@@ -5,6 +5,11 @@ $rule-colour: #FFC99B;
 $text-colour: #303030;
 $highlight-colour: #FF8011;
 
+$table-colour: #D9D9DB;
+$table-even-colour: $table-colour;
+$table-odd-colour: lighten($table-colour, 10%);
+$table-header-colour: darken($table-colour, 20%);
+
 //Layout definitions
 $body-width: 600px;
 
@@ -90,4 +95,49 @@ a {
     border-radius: 50px;
     padding: 2px 5px 2px 5px;
     font-size: $body-font-size - 2;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th {
+    //font-weight: bold;
+    font-size: $body-font-size;
+    //color: lighten($text-colour, 10%);
+    color: $table-odd-colour;
+    border-bottom: 1px solid darken($table-colour, 30%);
+    background-color: $table-header-colour;
+}
+
+td {
+    border-bottom: 1px solid darken($table-colour, 10%);
+}
+
+th, td {
+    padding: 5px 10px 5px 10px;
+}
+
+tr.even {
+    background-color: $table-even-colour;
+}
+
+tr.even:hover {
+    background-color: darken($table-even-colour, 20%);
+}
+
+tr.odd {
+    background-color: $table-odd-colour;
+}
+
+tr.odd:hover {
+    background-color: darken($table-odd-colour, 20%);
+}
+
+caption {
+    font-weight: bold;
+    padding-bottom: 10px;
 }

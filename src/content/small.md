@@ -12,6 +12,19 @@ transitive agent is marked ergative). This system applies only to intransitive
 and transitive verbs. For higher valencies, formed through [valence
 modification](#valencemod), the extra arguments are assigned cases semantically.
 
+  case           word       meaning
+  -------------- ---------- ---------------------------------
+  ergative       naju       -
+  nominative     najuj      -
+  accusative     najul      -
+  instrumental   najuma     “using the rock”
+  comitative     najuyi     “in the presence of the rock”
+  orientative    najurnu    “oriented towards the rock”
+  revertive      najurna    “orientated away from the rock”
+  locative       najurn     “at the rock”
+  -------------- ---------- ---------------------------------
+: Examples of Nominal Case Declensions
+
 Verb Phrases
 ------------
 
