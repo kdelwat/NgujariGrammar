@@ -38,9 +38,22 @@ module.exports = function(grunt) {
                     'build/js/main.js': 'src/js/main.js'
                 }
             }
+        },
+        watch: {
+            css: {
+                files: '**/*.scss',
+                tasks: ['sass'],
+                options: {},
+            },
+            md: {
+                files: '**/*.md',
+                tasks: ['node_pandoc'],
+                options: {},
+            }
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-node-pandoc');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
