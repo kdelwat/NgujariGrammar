@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-node-pandoc');
 
-    grunt.registerTask('default', ['node_pandoc']);
+    grunt.registerTask('default', ['node_pandoc', 'sass']);
 }
 
 
