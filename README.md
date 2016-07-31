@@ -45,3 +45,59 @@ Becomes:
 Which renders as:
 
 ![](http://imgur.com/wis8MUJl.png)
+
+### Rules
+
+Rules defining grammatical constructs can be created using a new syntax.
+
+```
+(*)label: rule
+
+```
+
+For example:
+
+```
+(*)Noun Phrase: np = [adj(s)-attr] n [rel(s)]
+```
+
+Becomes:
+
+```html
+<div class="rule">
+    <div class="rule-name">Noun Phrase</div>
+    <div class="rule-definition">np = [adj(s)-attr] n [rel(s)]</div>
+</div>
+```
+
+Which renders as:
+
+![](http://imgur.com/cWOvg2Tl.png)
+
+### Definitions
+
+Definitions of non-native words can be made to appear as hovertext, by surrounding them in backticks like ``so``.
+
+Words are defined in the CSV file `lexicon.csv`, in the following format:
+
+```
+Conword,Local,Type,Gender,Definitions
+bunn,to shine,verb,,"1d – x shines, 2 x shines on LOC"
+```
+
+Only the `Conword`, `Local`, and `Definitions` fields are currently used. The Pandoc filter looks up the word (say `garanya`) in the lexicon and produces the following code:
+
+```html
+<span class="word">garanya
+    <span class="definition">adult<br>
+        <span class="full-definition">applies to adults of the speaker's totem
+        </span>
+    </span>
+</span>
+```
+
+Which renders when the non-native word is moused-over as the following hovertext:
+
+![](https://i.imgur.com/kv05N6i.png)
+
+
