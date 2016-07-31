@@ -1,11 +1,15 @@
 // Colour definitions
-$background-colour: #F5F4F7;
-$example-colour: #D9D9DB;
-$rule-colour: #FFC99B;
-$text-colour: #303030;
-$highlight-colour: #FF8011;
+$orange: #FFC99B;
+$blue: #6F80AB;
+$green: #7AC97F;
+$black: #303030;
 
-$table-colour: #D9D9DB;
+$background-colour: lighten($blue, 40%);
+$example-colour: lighten($blue, 20%);
+$rule-colour: $orange;
+$text-colour: $black;
+
+$table-colour: lighten($green, 20%);
 $table-even-colour: $table-colour;
 $table-odd-colour: lighten($table-colour, 10%);
 $table-header-colour: darken($table-colour, 20%);
@@ -41,7 +45,8 @@ html{
     left: $sidebar-toggle-width;
     height: 100%;
     width: $sidebar-width;
-    background: $table-even-colour;
+    background: lighten($blue, 35%);
+    border-right: 2px solid lighten($blue, 20%)
 }
 
 // Styling for the sidebar toggle
@@ -50,8 +55,8 @@ html{
     left: 0px;
     height: 100%;
     width: $sidebar-toggle-width;
-    background: lighten($text-colour, 30%);
-    border-right: 2px solid $text-colour;
+    background: lighten($blue, 35%);
+    border-right: 2px solid lighten($blue, 20%);
     float: left;
 }
 
@@ -183,7 +188,7 @@ caption {
 
 .word:hover .definition {
     display: inline-block;
-    background-color: $rule-colour;
+    background-color: $example-colour;
 
     position: absolute;
     margin-left: 2px;
