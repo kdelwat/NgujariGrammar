@@ -1,5 +1,8 @@
 $(document).ready(function(){
-    // Sidebar toggling function
+    toggle_sidebar();
+});
+
+function toggle_sidebar() {
     var sidebar_visible = true;
 
     $("#toggle").click(function(){
@@ -12,4 +15,4 @@ $(document).ready(function(){
             $("#sidebar").animate({width: "200px", opacity:1}, "fast");
         }
     });
-});
+}
