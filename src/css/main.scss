@@ -19,6 +19,9 @@ $body-width: 600px;
 $sidebar-width: 200px;
 $sidebar-toggle-width: 5px;
 
+$header-padding: 0.5em;
+$box-padding: 15px; //the padding above and below tables, rules, and examples
+
 //Typography definitions
 $body-font-size: 16px;
 $tag-font-size: 14px;
@@ -37,6 +40,11 @@ html{
     font-size: $body-font-size;
     line-height: 1.5;
     color: $text-colour;
+}
+
+#body {
+    margin: 0 auto 10px auto;
+    max-width: $body-width;
 }
 
 // Styling for the sidebar menu
@@ -60,67 +68,21 @@ html{
     float: left;
 }
 
-#body {
-    margin: 0 auto 10px auto;
-    max-width: $body-width;
+// Styling for normal tags
+
+h1, h2, h3, h4, h5, h6 {
+    padding-top: $header-padding;
+    padding-bottom: $header-padding;
 }
 
-@mixin boxed($colour) {
-    background: $colour;
-    padding-left: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border-left: 4px solid darken($colour, 30%);
-    border-top: 1px solid darken($colour, 10%);
-    border-bottom: 1px solid darken($colour, 10%);
-    border-right: 1px solid darken($colour, 10%);
+ul, ol {
+    margin-top: $box-padding;
+    margin-bottom: $box-padding;
 }
 
-.example {
-    @include boxed($example-colour);
-    position: relative;
-}
-
-.example-target {
-    font-size: $body-font-size + 2;
-}
-
-.example-gloss {
-    font-variant: small-caps;
-}
-
-.example-native {
-    font-style: italic;
-}
-
-.rule {
-    @include boxed($rule-colour);
-}
-
-.rule-name {
-    font-size: $body-font-size + 2;
-}
-
-.rule-definition {
-    font-variant: small-caps;
-}
-
-@mixin tag($shade-colour, $text-colour) {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    padding-right: 5px;
+li {
+    margin-left: 45px;
     padding-left: 5px;
-    border-left: 1px solid darken($shade-colour, 10%);
-    border-top: 1px solid darken($shade-colour, 10%);
-    font-size: $tag-font-size;
-    font-weight: bold;
-    background-color: darken($shade-colour, 30%);
-    color: $text-colour;
-}
-
-.example-tag {
-    @include tag($example-colour, $background-colour);
 }
 
 a {
@@ -137,6 +99,8 @@ table {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
+    margin-top: $box-padding;
+    margin-bottom: $box-padding;
 }
 
 th {
@@ -175,6 +139,71 @@ tr.odd:hover {
 caption {
     font-weight: bold;
     padding-bottom: 10px;
+}
+
+// Styling for new features
+
+@mixin boxed($colour) {
+    // Surrounds div in coloured box
+    background: $colour;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-left: 4px solid darken($colour, 30%);
+    border-top: 1px solid darken($colour, 10%);
+    border-bottom: 1px solid darken($colour, 10%);
+    border-right: 1px solid darken($colour, 10%);
+    margin-top: $box-padding;
+    margin-bottom: $box-padding;
+}
+
+@mixin tag($shade-colour, $text-colour) {
+    // Applies a label to the bottom-right of a box
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-left: 1px solid darken($shade-colour, 10%);
+    border-top: 1px solid darken($shade-colour, 10%);
+    font-size: $tag-font-size;
+    font-weight: bold;
+    background-color: darken($shade-colour, 30%);
+    color: $text-colour;
+}
+
+.example {
+    @include boxed($example-colour);
+    position: relative;
+
+}
+
+.example-target {
+    font-size: $body-font-size + 2;
+}
+
+.example-gloss {
+    font-variant: small-caps;
+}
+
+.example-native {
+    font-style: italic;
+}
+
+.example-tag {
+    @include tag($example-colour, $background-colour);
+}
+
+.rule {
+    @include boxed($rule-colour);
+}
+
+.rule-name {
+    font-size: $body-font-size + 2;
+}
+
+.rule-definition {
+    font-variant: small-caps;
 }
 
 .word {
