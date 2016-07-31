@@ -12,6 +12,8 @@ $table-header-colour: darken($table-colour, 20%);
 
 //Layout definitions
 $body-width: 600px;
+$sidebar-width: 200px;
+$sidebar-toggle-width: 20px;
 
 //Typography definitions
 $body-font-size: 16px;
@@ -21,7 +23,32 @@ html{
     background: $background-colour;
 }
 
-body {
+// Basic layout styling
+* {margin: 0; padding: 0;}
+
+#sidebar {
+    position: fixed;
+    left: $sidebar-toggle-width;
+    height: 100%;
+    width: $sidebar-width;
+    background: green;
+}
+
+#toggle {
+    position: fixed;
+    left: 0px;
+    height: 100%;
+    width: $sidebar-toggle-width;
+    background: red;
+    float: left;
+}
+
+#main-container {
+    height: 100%;
+    width: 100%;
+}
+
+#body {
     margin: 0 auto 10px auto;
     max-width: $body-width;
     font-family: sans-serif;
