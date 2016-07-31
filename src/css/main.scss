@@ -13,7 +13,7 @@ $table-header-colour: darken($table-colour, 20%);
 //Layout definitions
 $body-width: 600px;
 $sidebar-width: 200px;
-$sidebar-toggle-width: 20px;
+$sidebar-toggle-width: 5px;
 
 //Typography definitions
 $body-font-size: 16px;
@@ -26,35 +26,38 @@ html{
 // Basic layout styling
 * {margin: 0; padding: 0;}
 
+#main-container {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: $body-font-size;
+    line-height: 1.5;
+    color: $text-colour;
+}
+
+// Styling for the sidebar menu
 #sidebar {
     position: fixed;
     left: $sidebar-toggle-width;
     height: 100%;
     width: $sidebar-width;
-    background: green;
+    background: $table-even-colour;
 }
 
+// Styling for the sidebar toggle
 #toggle {
     position: fixed;
     left: 0px;
     height: 100%;
     width: $sidebar-toggle-width;
-    background: red;
+    background: lighten($text-colour, 30%);
+    border-right: 2px solid $text-colour;
     float: left;
-}
-
-#main-container {
-    height: 100%;
-    width: 100%;
 }
 
 #body {
     margin: 0 auto 10px auto;
     max-width: $body-width;
-    font-family: sans-serif;
-    font-size: $body-font-size;
-    line-height: 1.5;
-    color: $text-colour;
 }
 
 @mixin boxed($colour) {
