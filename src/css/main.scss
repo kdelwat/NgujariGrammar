@@ -237,3 +237,51 @@ caption {
     font-weight: normal;
     text-align: justify;
 }
+
+// Sidebar contents
+
+#sidebar-content {
+    padding: 5px;
+
+}
+
+#sidebar-content ul, ol {
+    margin: 0px;
+    list-style-type: none;
+}
+
+#sidebar-content li {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+#sidebar-content ul {
+    border-bottom: 0.1em solid lighten($blue, 30%);
+
+}
+// First-level list items
+#sidebar-content ul li {
+    font-weight: bold;
+    font-size: $body-font-size;
+}
+
+// Second-level list items
+#sidebar-content ul ul li {
+	font-weight: normal;
+    margin-left: 5px;
+    font-size: $body-font-size - 2;
+}
+
+#sidebar-content a {
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 0px 0px 0px 2px;
+    display: block;
+}
+
+#sidebar-content a:hover {
+    background-color: lighten($blue, 20%);
+    padding: 0px;
+    border-left: 2px solid $blue;
+}

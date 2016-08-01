@@ -3,7 +3,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         node_pandoc: {
             options: {
-                flags: '--include-in-header ./src/html/header.html --template ./pandoc.template --filter ./filter.py'
+                flags: '--include-in-header ./src/html/header.html --template ./pandoc.template --filter ./filter.py --toc'
             },
             target: {
                 expand: true,

@@ -48,17 +48,17 @@ $if(date)$
 $endif$
 </div>
 $endif$
-$if(toc)$
-<div id="$idprefix$TOC">
-$toc$
-</div>
-$endif$
+
 
 <div id="main-container">
     <div id="toggle"></div>
 
     <div id="sidebar">
-        <div id="sidebar-content">content<br>content</div>
+      <div id="sidebar-content">
+        $if(toc)$
+        $toc$
+        $endif$
+      </div>
     </div>
 
     <div id="body">
