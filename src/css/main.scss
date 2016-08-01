@@ -19,11 +19,14 @@ $body-width: 600px;
 $sidebar-width: 200px;
 $sidebar-toggle-width: 5px;
 
+$header-height: 40px;
+
 $header-padding: 0.5em;
 $box-padding: 15px; //the padding above and below tables, rules, and examples
 
 //Typography definitions
 $body-font-size: 16px;
+$title-font-size: 50px;
 $tag-font-size: 14px;
 
 html{
@@ -50,6 +53,7 @@ html{
 // Styling for the sidebar menu
 #sidebar {
     position: fixed;
+    top: $header-height;
     left: $sidebar-toggle-width;
     height: 100%;
     width: $sidebar-width;
@@ -60,12 +64,40 @@ html{
 // Styling for the sidebar toggle
 #toggle {
     position: fixed;
+    top: $header-height;
     left: 0px;
     height: 100%;
     width: $sidebar-toggle-width;
     background: lighten($blue, 35%);
     border-right: 2px solid lighten($blue, 20%);
     float: left;
+}
+
+// Header and title
+
+#header {
+    background-color: $green;
+    height: $header-height;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    border-bottom: 1px solid darken($green, 20%)
+}
+
+#home-link {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: $text-colour;
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+h1.title {
+    font-size: $title-font-size;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 0px;
 }
 
 // Styling for normal tags

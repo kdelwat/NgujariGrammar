@@ -1,8 +1,9 @@
-Syntax
-======
+% Syntax
+% Cadel Watson
+% 1/8/2016
 
 Alignment
----------
+=========
 
 The alignment of Ngujari depends on whether the noun in question is an animate
 pronoun or not. For clauses `garanya` with exclusively animate pronouns, the
@@ -26,7 +27,7 @@ modification](#valencemod), the extra arguments are assigned cases semantically.
 : Examples of Nominal Case Declensions
 
 Verb Phrases
-------------
+============
 
 (*)Verb Phrase: vp = aux [neg] np(s) [adv(s)] [val] v
 
@@ -51,7 +52,7 @@ Noun phrases tend to appear in order of importance to the statement as
 judged by the speaker.
 
 Noun Phrases
-------------
+============
 
 (*)Noun Phrase: np = [adj(s)-attr] n [rel(s)]
 

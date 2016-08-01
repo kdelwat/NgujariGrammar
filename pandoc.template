@@ -34,21 +34,14 @@ $endfor$
 $for(include-before)$
 $include-before$
 $endfor$
-$if(title)$
-<div id="$idprefix$header">
-<h1 class="title">$title$</h1>
 $if(subtitle)$
 <h1 class="subtitle">$subtitle$</h1>
 $endif$
-$for(author)$
-<h2 class="author">$author$</h2>
-$endfor$
-$if(date)$
-<h3 class="date">$date$</h3>
-$endif$
+<div id="header">
+  <a id="home-link" href="../index.html">
+    <span>Ngujari</span>
+  </a>
 </div>
-$endif$
-
 
 <div id="main-container">
     <div id="toggle"></div>
@@ -62,7 +55,11 @@ $endif$
     </div>
 
     <div id="body">
-        $body$
+      $if(title)$
+        <h1 class="title">$title$</h1>
+      $endif$
+
+      $body$
     </div>
 
 </div>
