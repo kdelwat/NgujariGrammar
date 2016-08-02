@@ -2,16 +2,27 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         node_pandoc: {
-            options: {
-                flags: '--include-in-header ./src/html/header.html --template ./pandoc.template --filter ./filter.py --toc'
-            },
-            target: {
+            options: {},
+            content: {
+                options: {
+                    flags: '--include-in-header ./src/html/header.html --template ./pandoc.template --filter ./filter.py --toc'
+                },
                 expand: true,
                 cwd: 'src/content/',
                 src: ['*.md'],
                 dest: 'build/content/',
                 ext: '.html'
-            }
+            },
+            texts: {
+                options: {
+                    flags: '--include-in-header ./src/html/header.html'
+                },
+                expand: true,
+                cwd: 'src/texts/',
+                src: ['*.md'],
+                dest: 'build/texts/',
+                ext: '.html'
+            },
         },
         sass: {
             options: {
