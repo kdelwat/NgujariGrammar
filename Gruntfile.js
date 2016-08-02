@@ -1,6 +1,16 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        copy: {
+            main: {
+                files: [
+                    {expand: true,
+                     cwd: 'src/',
+                     src: ["*.html"],
+                     dest: "build/"},
+                ],
+            },
+        },
         node_pandoc: {
             options: {},
             content: {
@@ -68,9 +78,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-node-pandoc');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-jshint')
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('default', ['node_pandoc', 'sass', 'uglify', 'jshint']);
+    grunt.registerTask('default', ['node_pandoc', 'sass', 'uglify', 'jshint', 'copy']);
 }
 
 
