@@ -68,8 +68,8 @@ html{
     left: 0px;
     height: 100%;
     width: $sidebar-toggle-width;
-    background: lighten($blue, 35%);
-    border-right: 2px solid lighten($blue, 20%);
+    background: lighten($blue, 20%);
+    border-right: 2px solid lighten($blue, 10%);
     float: left;
 }
 
