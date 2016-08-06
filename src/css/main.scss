@@ -58,7 +58,9 @@ html{
     height: 100%;
     width: $sidebar-width;
     background: lighten($blue, 35%);
-    border-right: 2px solid lighten($blue, 20%)
+    border-right: 2px solid lighten($blue, 20%);
+    z-index: 2;
+
 }
 
 // Styling for the sidebar toggle
@@ -145,6 +147,50 @@ h1.title {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 0px;
+}
+
+// Homepage styling
+h1.home-title {
+    font-size: $title-font-size + 20;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+
+h2.subtitle {
+    font-size: $body-font-size + 4;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#chapter-column {
+    float: left;
+    margin: 0;
+    width: 50%;
+}
+
+#text-column {
+    float: left;
+    width: 50%;
+
+}
+
+ol.homepage-list {
+    list-style-type: decimal;
+}
+
+
+ol.homepage-list a {
+    background-color: transparent;
+    border-radius: 0px;
+    font-size: $body-font-size;
+}
+
+ol.homepage-list a:hover {
+    text-decoration: underline;
 }
 
 // Styling for normal tags
