@@ -38,9 +38,25 @@ $if(subtitle)$
 <h1 class="subtitle">$subtitle$</h1>
 $endif$
 <div id="header">
-  <a id="home-link" href="../index.html">
-    <span>Ngujari</span>
-  </a>
+  <ul id="nav">
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Chapters</a>
+      <ul>
+        <li><a href="#">Syntax</a></li>
+        <li><a href="#">Phonology</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Texts</a>
+      <ul>
+        <li><a href="#">A text</a></li>
+        <li><a href="#">Another</a></li>
+      </ul>
+    </li>
+  </ul>
 </div>
 
 <div id="main-container">
