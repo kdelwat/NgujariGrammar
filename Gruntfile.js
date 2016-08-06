@@ -70,6 +70,11 @@ module.exports = function(grunt) {
                 files: '**/*.md',
                 tasks: ['node_pandoc'],
                 options: {},
+            },
+            html: {
+                files: 'src/*.html',
+                tasks: ['copy'],
+                options: {},
             }
         }
     });
