@@ -111,6 +111,10 @@ html{
     padding: 0px 0px 0px 0px;
 }
 
+#nav li:hover {
+    background: lighten($green, 10%);
+}
+
 #nav a {
     display: block;
     padding: 2px 5px 2px 5px;
