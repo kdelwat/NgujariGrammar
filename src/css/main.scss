@@ -87,20 +87,21 @@ html{
 // Header and title
 
 #header {
-    background-color: $green;
-    height: $header-height;
-    width: 100%;
     position: fixed;
+    width: 100%;
+    height: $header-height;
     z-index: 3;
-    border-bottom: 1px solid darken($green, 20%)
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: $green;
+    border-bottom: 1px solid darken($green, 20%);
 }
 
 #nav {
     list-style: none;
-    float: left;
-    width: 100%;
-    margin-top: $header-height / 2 - 14;
-    margin-bottom: $header-height / 2 - 14;
 }
 
 #nav li {
@@ -112,8 +113,6 @@ html{
 
 #nav a {
     display: block;
-    background-color: transparent;
-    border-radius: 0px;
     padding: 2px 5px 2px 5px;
     font-size: $h3-font-size;
 }
@@ -121,17 +120,13 @@ html{
 #nav ul {
     list-style: none;
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: -9999px;
-    margin-right:0px;
-    padding: 0px 0px 0px 0px;
     background: lighten($green, 10%);
 }
 
 #nav ul li {
-    padding-top: 1px;
     float: none;
-    margin-left: 0px;
     margin-right: 0px;
 }
 
@@ -148,7 +143,6 @@ html{
     background-color: $green;
     border-left: 2px solid $blue;
     padding-left: 5px;
-
 }
 
 h1.title {
@@ -235,11 +229,14 @@ li {
 a {
     text-decoration: none;
     color: $text-colour;
+    font-size: $small-font-size;
+    font-family: $sans-serif;
+}
+
+#body a {
     background-color: $rule-colour;
     border-radius: 50px;
     padding: 2px 5px 2px 5px;
-    font-size: $small-font-size;
-    font-family: $sans-serif;
 }
 
 table {
