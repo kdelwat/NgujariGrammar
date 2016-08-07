@@ -1,3 +1,6 @@
+// Responsive breakpoints
+$mobile-max: 480px;
+
 // Colour definitions
 $orange: #FFC99B;
 $blue: #6F80AB;
@@ -98,6 +101,12 @@ html{
 
     background-color: $green;
     border-bottom: 1px solid darken($green, 20%);
+}
+
+@media (max-width: $mobile-max) {
+    #header {
+        justify-content: center;
+    }
 }
 
 #nav {
