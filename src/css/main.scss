@@ -25,13 +25,22 @@ $header-padding: 0.5em;
 $box-padding: 15px; //the padding above and below tables, rules, and examples
 
 //Typography definitions
-$body-font-size: 16px;
-$title-font-size: 50px;
+$body-font-size: 18px;
 $tag-font-size: 14px;
+
+$homepage-title-font-size: 4.200em;
+$title-font-size: 3.157em;
+$h1-font-size: 2.369em;
+$h2-font-size: 1.777em;
+$h3-font-size: 1.333em;
+$small-font-size: 0.75em;
+
+$serif: 'Crimson Text', serif;
+$sans-serif: 'Montserrat', sans-serif;
 
 html{
     background: $background-colour;
-    font-family: sans-serif;
+    font-family: $serif;
 }
 
 // Basic layout styling
@@ -106,7 +115,7 @@ html{
     background-color: transparent;
     border-radius: 0px;
     padding: 2px 5px 2px 5px;
-    font-size: $body-font-size + 4;
+    font-size: $h3-font-size;
 }
 
 #nav ul {
@@ -151,14 +160,14 @@ h1.title {
 
 // Homepage styling
 h1.home-title {
-    font-size: $title-font-size + 20;
+    font-size: $homepage-title-font-size;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 0px;
 }
 
 h2.subtitle {
-    font-size: $body-font-size + 4;
+    font-size: $h3-font-size;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -198,6 +207,19 @@ ol.homepage-list a:hover {
 h1, h2, h3, h4, h5, h6 {
     padding-top: $header-padding;
     padding-bottom: $header-padding;
+    font-family: $sans-serif;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
 }
 
 ul, ol {
@@ -216,7 +238,8 @@ a {
     background-color: $rule-colour;
     border-radius: 50px;
     padding: 2px 5px 2px 5px;
-    font-size: $body-font-size - 2;
+    font-size: $small-font-size;
+    font-family: $sans-serif;
 }
 
 table {
@@ -262,7 +285,7 @@ tr.odd:hover {
 }
 
 caption {
-    font-weight: bold;
+    font-family: $sans-serif;
     padding-bottom: 10px;
 }
 
@@ -291,8 +314,8 @@ caption {
     padding-left: 5px;
     border-left: 1px solid darken($shade-colour, 10%);
     border-top: 1px solid darken($shade-colour, 10%);
-    font-size: $tag-font-size;
-    font-weight: bold;
+    font-size: $small-font-size;
+    font-family: $sans-serif;
     background-color: darken($shade-colour, 30%);
     color: $text-colour;
 }
@@ -324,7 +347,7 @@ caption {
 }
 
 .rule-name {
-    font-size: $body-font-size + 2;
+    font-family: $sans-serif;
 }
 
 .rule-definition {
@@ -338,6 +361,7 @@ caption {
 
 .word .definition {
     display: none;
+
 }
 
 .word:hover .definition {
@@ -351,13 +375,14 @@ caption {
     width: 10em;
     border-radius: 10px;
 
-    font-size: $body-font-size - 2;
+    font-size: $small-font-size;
+    font-family: $sans-serif;
     font-style: normal;
     font-weight: bold;
+
 }
 
 .full-definition {
-    font-size: $body-font-size - 4;
     font-style: italic;
     font-weight: normal;
     text-align: justify;

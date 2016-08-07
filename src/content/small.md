@@ -2,8 +2,7 @@
 % Cadel Watson
 % 1/8/2016
 
-Alignment
-=========
+# Alignment
 
 The alignment of Ngujari depends on whether the noun in question is an animate
 pronoun or not. For clauses `garanya` with exclusively animate pronouns, the
@@ -12,6 +11,18 @@ alignment is nominative-accusative, but otherwise it is ergative-nominative
 the transitive agent is marked ergative). This system applies only to `waj`
 intransitive and transitive verbs. For higher valencies, formed through [valence
 modification](#valencemod), the extra arguments are assigned cases semantically.
+There's a new font now! *With beautiful italics*!
+
+## More Alignment
+
+The alignment of Ngujari depends on whether the noun in question is an animate
+pronoun or not. For clauses `garanya` with exclusively animate pronouns, the
+alignment is nominative-accusative, but otherwise it is ergative-nominative
+(i.e. the transitive patient and intransitive object are marked nominative and
+the transitive agent is marked ergative). This system applies only to `waj`
+intransitive and transitive verbs. For higher valencies, formed through [valence
+modification](#valencemod), the extra arguments are assigned cases semantically.
+
 
   case           word       meaning
   -------------- ---------- ---------------------------------
@@ -25,6 +36,16 @@ modification](#valencemod), the extra arguments are assigned cases semantically.
   locative       najurn     “at the rock”
   -------------- ---------- ---------------------------------
 : Examples of Nominal Case Declensions
+
+### Even More Alignment
+
+The alignment of Ngujari depends on whether the noun in question is an animate
+pronoun or not. For clauses `garanya` with exclusively animate pronouns, the
+alignment is nominative-accusative, but otherwise it is ergative-nominative
+(i.e. the transitive patient and intransitive object are marked nominative and
+the transitive agent is marked ergative). This system applies only to `waj`
+intransitive and transitive verbs. For higher valencies, formed through [valence
+modification](#valencemod), the extra arguments are assigned cases semantically.
 
 Verb Phrases
 ============
