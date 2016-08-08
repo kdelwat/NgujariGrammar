@@ -28,7 +28,7 @@ $header-padding: 0.5em;
 $box-padding: 15px; //the padding above and below tables, rules, and examples
 
 //Typography definitions
-$body-font-size: 18px;
+$body-font-size: 16px;
 $tag-font-size: 14px;
 
 $homepage-title-font-size: 4.200em;
@@ -36,14 +36,13 @@ $title-font-size: 3.157em;
 $h1-font-size: 2.369em;
 $h2-font-size: 1.777em;
 $h3-font-size: 1.333em;
-$small-font-size: 0.75em;
+$small-font-size: 0.9em;
 
-$serif: 'Crimson Text', serif;
-$sans-serif: 'Montserrat', sans-serif;
+$font: 'Open Sans', sans-serif;
 
 html{
     background: $background-colour;
-    font-family: $serif;
+    font-family: $font;
 }
 
 // Basic layout styling
@@ -214,7 +213,7 @@ ol.homepage-list a:hover {
 h1, h2, h3, h4, h5, h6 {
     padding-top: $header-padding;
     padding-bottom: $header-padding;
-    font-family: $sans-serif;
+    font-family: $font;
 }
 
 h1 {
@@ -243,7 +242,7 @@ a {
     text-decoration: none;
     color: $text-colour;
     font-size: $small-font-size;
-    font-family: $sans-serif;
+    font-family: $font;
 }
 
 #body a {
@@ -295,7 +294,7 @@ tr.odd:hover {
 }
 
 caption {
-    font-family: $sans-serif;
+    font-family: $font;
     padding-bottom: 10px;
 }
 
@@ -325,7 +324,7 @@ caption {
     border-left: 1px solid darken($shade-colour, 10%);
     border-top: 1px solid darken($shade-colour, 10%);
     font-size: $small-font-size;
-    font-family: $sans-serif;
+    font-family: $font;
     background-color: darken($shade-colour, 30%);
     color: $text-colour;
 }
@@ -357,7 +356,7 @@ caption {
 }
 
 .rule-name {
-    font-family: $sans-serif;
+    font-family: $font;
 }
 
 .rule-definition {
@@ -386,7 +385,7 @@ caption {
     border-radius: 10px;
 
     font-size: $small-font-size;
-    font-family: $sans-serif;
+    font-family: $font;
     font-style: normal;
     font-weight: bold;
 
