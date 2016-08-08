@@ -19,8 +19,10 @@ $table-header-colour: darken($table-colour, 20%);
 
 //Layout definitions
 $body-width: 600px;
+$mobile-body-width: 200px;
 $sidebar-width: 200px;
 $sidebar-toggle-width: 5px;
+$sidebar-toggle-mobile-width: 10px;
 
 $header-height: 40px;
 
@@ -29,6 +31,7 @@ $box-padding: 15px; //the padding above and below tables, rules, and examples
 
 //Typography definitions
 $body-font-size: 16px;
+$mobile-body-font-size: 14px;
 $tag-font-size: 14px;
 
 $homepage-title-font-size: 4.200em;
@@ -56,9 +59,16 @@ html{
     color: $text-colour;
 }
 
+
 #body {
     margin: 0 auto 10px auto;
     max-width: $body-width;
+}
+
+@media (max-width: $body-width + $sidebar-toggle-width) {
+    #body {
+        margin-left: $sidebar-toggle-mobile-width + 10px
+    }
 }
 
 // Styling for the sidebar menu
@@ -84,6 +94,15 @@ html{
     background: lighten($blue, 20%);
     border-right: 2px solid lighten($blue, 10%);
     float: left;
+}
+
+@media (max-width: $mobile-max) {
+    #toggle {
+        width: $sidebar-toggle-mobile-width;
+    }
+    #sidebar {
+        left: $sidebar-toggle-mobile-width;
+    }
 }
 
 // Header and title
@@ -401,7 +420,7 @@ caption {
 
 #sidebar-content {
     padding: 5px;
-
+    font-size: $body-font-size;
 }
 
 #sidebar-content ul, ol {
@@ -422,14 +441,19 @@ caption {
 // First-level list items
 #sidebar-content ul li {
     font-weight: bold;
-    font-size: $body-font-size;
 }
 
 // Second-level list items
 #sidebar-content ul ul li {
 	font-weight: normal;
     margin-left: 5px;
-    font-size: $body-font-size - 2;
+    font-size: $body-font-size + 2;
+}
+
+@media (max-width: $mobile-max) {
+    #sidebar-content {
+        font-size: $body-font-size + 4;
+    }
 }
 
 #sidebar-content a {
