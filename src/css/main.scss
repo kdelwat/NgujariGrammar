@@ -35,10 +35,11 @@ $mobile-body-font-size: 14px;
 $tag-font-size: 14px;
 
 $homepage-title-font-size: 4.200em;
-$title-font-size: 3.157em;
-$h1-font-size: 2.369em;
-$h2-font-size: 1.777em;
-$h3-font-size: 1.333em;
+
+$title-font-size: 2.566em;
+$h1-font-size: 1.424em;
+$h2-font-size: 1.266em;
+$h3-font-size: 1.125em;
 $small-font-size: 0.9em;
 
 $font: 'Open Sans', sans-serif;
@@ -179,7 +180,7 @@ html{
 h1.title {
     font-size: $title-font-size;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 0px;
 }
 
