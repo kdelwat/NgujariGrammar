@@ -44,75 +44,22 @@ $small-font-size: 0.9em;
 
 $font: 'Open Sans', sans-serif;
 
+// Basic layout styling
+* {margin: 0; padding: 0;}
+
 html{
     background: $background-colour;
     font-family: $font;
 }
 
-// Basic layout styling
-* {margin: 0; padding: 0;}
-
-#main-container {
-    height: 100%;
-    width: 100%;
-    font-size: $body-font-size;
-    line-height: 1.5;
-    color: $text-colour;
+body {
+    display: flex;
+    flex-direction: column;
 }
 
-
-#body {
-    margin: 0 auto 10px auto;
-    max-width: $body-width;
-}
-
-@media (max-width: $body-width + $sidebar-toggle-width) {
-    #body {
-        margin-left: $sidebar-toggle-mobile-width + 10px
-    }
-}
-
-// Styling for the sidebar menu
-#sidebar {
-    position: fixed;
-    top: $header-height;
-    left: $sidebar-toggle-width;
-    height: 100%;
-    width: $sidebar-width;
-    background: lighten($blue, 35%);
-    border-right: 2px solid lighten($blue, 20%);
-    z-index: 2;
-
-}
-
-// Styling for the sidebar toggle
-#toggle {
-    position: fixed;
-    top: $header-height;
-    left: 0px;
-    height: 100%;
-    width: $sidebar-toggle-width;
-    background: lighten($blue, 20%);
-    border-right: 2px solid lighten($blue, 10%);
-    float: left;
-}
-
-@media (max-width: $mobile-max) {
-    #toggle {
-        width: $sidebar-toggle-mobile-width;
-    }
-    #sidebar {
-        left: $sidebar-toggle-mobile-width;
-    }
-}
-
-// Header and title
-
-#header {
-    position: fixed;
-    width: 100%;
+header {
+    flex-shrink: 64px;
     height: $header-height;
-    z-index: 3;
 
     display: flex;
     justify-content: flex-start;
@@ -122,10 +69,80 @@ html{
     border-bottom: 1px solid darken($green, 20%);
 }
 
+
+app {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    font-size: $body-font-size;
+    line-height: 1.5;
+    color: $text-colour;
+}
+
+nav {
+    flex-basis: $sidebar-width;
+    order: 0;
+    background: lighten($blue, 35%);
+    border-right: 2px solid lighten($blue, 20%);
+}
+
+article {
+    flex-grow: 1;
+    order: 1;
+    max-width: $body-width;
+}
+
+aside {
+    flex-basis: $sidebar-width;
+    order: 2;
+    flex-grow: 0;
+}
+
+// Sidebar controls for the mobile view (invisible on desktop)
+#sidebar-toggle, #aside-toggle {
+    display: none;
+}
+
+// Mobile breakpoint
 @media (max-width: $mobile-max) {
-    #header {
-        justify-content: center;
-    }
+    // Center contents of header, and place toggles to the sides.
+    header {
+        justify-content: space-between;
+    };
+
+    // Both the nav and aside become columns which float in on toggle.
+    nav {
+        display: block;
+        position: absolute;
+        left: -$sidebar-width;
+        height: 100%;
+        z-index: 2;
+
+        transition-duration: 1s;
+
+        &.open {
+            left: 0px;
+        }
+    };
+
+    aside {
+        display: block;
+        position: absolute;
+        right: -$sidebar-width;
+        height: 100%;
+        z-index: 2;
+
+        transition-duration: 1s;
+
+        &.open {
+            right: 0px;
+        }
+    };
+
+    // Show sidebar toggles
+    #sidebar-toggle, #aside-toggle {
+        display: block;
+    };
 }
 
 #nav {
