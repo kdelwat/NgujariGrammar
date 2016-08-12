@@ -1,0 +1,70 @@
+//_features.scss
+// Styles for custom Markdown features
+
+.example {
+    @include boxed($example-colour);
+    position: relative;
+
+}
+
+.example-target {
+    font-size: $body-font-size + 2;
+}
+
+.example-gloss {
+    font-variant: small-caps;
+}
+
+.example-native {
+    font-style: italic;
+}
+
+.example-tag {
+    @include tag($example-colour, $background-colour);
+}
+
+.rule {
+    @include boxed($rule-colour);
+}
+
+.rule-name {
+    font-family: $font;
+}
+
+.rule-definition {
+    font-variant: small-caps;
+}
+
+.word {
+    position: relative;
+    font-style: italic;
+
+    &.definition {
+        display: none;
+    }
+
+    &:hover {
+        &.definition {
+            display: inline-block;
+            background-color: $example-colour;
+
+            position: absolute;
+            margin-left: 2px;
+            padding-left: 4px;
+            padding-right: 4px;
+            width: 10em;
+            border-radius: 10px;
+
+            font-size: $small-font-size;
+            font-family: $font;
+            font-style: normal;
+            font-weight: bold;
+        }
+    }
+}
+
+.full-definition {
+    font-style: italic;
+    font-weight: normal;
+    text-align: justify;
+}

@@ -1,0 +1,37 @@
+//_mixins.scss
+// Custom mixins
+
+// Surrounds a div in a box of specified colour
+@mixin boxed($colour) {
+    background: $colour;
+
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    border-left: 4px solid darken($colour, 30%);
+    border-top: 1px solid darken($colour, 10%);
+    border-bottom: 1px solid darken($colour, 10%);
+    border-right: 1px solid darken($colour, 10%);
+
+    margin-top: $box-padding;
+    margin-bottom: $box-padding;
+}
+
+// Converts a div to a label in the bottom-right of a boxed div
+@mixin tag($shade-colour, $text-colour) {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    padding-right: 5px;
+    padding-left: 5px;
+
+    border-left: 1px solid darken($shade-colour, 10%);
+    border-top: 1px solid darken($shade-colour, 10%);
+
+    font-size: $small-font-size;
+    font-family: $font;
+    background-color: darken($shade-colour, 30%);
+    color: $text-colour;
+}

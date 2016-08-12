@@ -1,0 +1,207 @@
+//_home.scss
+// Styles that define the basic page layout and behaviour
+
+* {margin: 0; padding: 0;}
+
+html{
+    background: $background-colour;
+    font-family: $font;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-shrink: 64px;
+    height: $header-height;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: $green;
+    border-bottom: 1px solid darken($green, 20%);
+}
+
+
+app {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    font-size: $body-font-size;
+    line-height: 1.5;
+    color: $text-colour;
+}
+
+nav {
+    flex-basis: $sidebar-width;
+    order: 0;
+    background: lighten($blue, 35%);
+    border-right: 2px solid lighten($blue, 20%);
+}
+
+article {
+    flex-grow: 1;
+    order: 1;
+    max-width: $body-width;
+}
+
+aside {
+    flex-basis: $sidebar-width;
+    order: 2;
+    flex-grow: 0;
+}
+
+// Sidebar controls for the mobile view (invisible on desktop)
+#sidebar-toggle, #aside-toggle {
+    display: none;
+}
+
+
+
+// Sidebar content
+#sidebar-content {
+    padding: 5px;
+    font-size: $body-font-size;
+
+    a {
+        background-color: transparent;
+        border-radius: 0px;
+        padding: 0px 0px 0px 2px;
+        display: block;
+
+        &:hover {
+            background-color: lighten($blue, 20%);
+            padding: 0px;
+            border-left: 2px solid $blue;
+        }
+    }
+
+    ul, ol {
+        margin: 0px;
+        list-style-type: none;
+    }
+
+    li {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    ul {
+        border-bottom: 0.1em solid lighten($blue, 30%);
+
+        // First-level list items
+        li {
+            font-weight: bold;
+        }
+
+        // Second-level list items
+        ul {
+            li {
+                font-weight: normal;
+                margin-left: 5px;
+                font-size: $body-font-size + 2;
+            }
+        }
+    }
+}
+
+// Mobile breakpoint
+@media (max-width: $mobile-max) {
+    // Center contents of header, and place toggles to the sides.
+    header {
+        justify-content: space-between;
+    };
+
+    // Both the nav and aside become columns which float in on toggle.
+    nav {
+        display: block;
+        position: absolute;
+        left: -$sidebar-width;
+        height: 100%;
+        z-index: 2;
+
+        transition-duration: 1s;
+
+        &.open {
+            left: 0px;
+        }
+    };
+
+    aside {
+        display: block;
+        position: absolute;
+        right: -$sidebar-width;
+        height: 100%;
+        z-index: 2;
+
+        transition-duration: 1s;
+
+        &.open {
+            right: 0px;
+        }
+    };
+
+    // Show sidebar toggles
+    #sidebar-toggle, #aside-toggle {
+        display: block;
+    };
+}
+
+#menu {
+    list-style: none;
+
+    li {
+        float: left;
+        position: relative;
+        margin: 0px 10px 0px 0px;
+        padding: 0px 0px 0px 0px;
+
+        // Section link
+        a {
+            display: block;
+            padding: 2px 5px 2px 5px;
+            font-size: $h3-font-size;
+        }
+
+        // The hidden options menu
+        ul {
+            list-style: none;
+            position: absolute;
+            top: 15px;
+            left: -9999px;
+            background: lighten($green, 10%);
+
+            li {
+                float: none;
+                margin-right: 0px;
+            }
+        }
+
+        &:hover {
+            background: lighten($green, 10%);
+
+            // The options menu, displayed when the section link is hovered over
+            ul {
+                left: 0;
+
+                li a {
+                    font-size: $body-font-size;
+                    padding-left: 7px;
+
+                    &:hover {
+                        background-color: $green;
+                        border-left: 2px solid $blue;
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    #sidebar-content {
+        font-size: $body-font-size + 4;
+    }
+}

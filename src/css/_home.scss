@@ -1,0 +1,46 @@
+//_home.scss
+// Styles exclusively for the site home page
+
+ol.homepage-list {
+    list-style-type: decimal;
+}
+
+
+ol.homepage-list a {
+    background-color: transparent;
+    border-radius: 0px;
+    font-size: $body-font-size;
+}
+
+ol.homepage-list a:hover {
+    text-decoration: underline;
+}
+
+// Homepage styling
+h1.home-title {
+    font-size: $homepage-title-font-size;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+
+h2.subtitle {
+    font-size: $h3-font-size;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#chapter-column {
+    float: left;
+    margin: 0;
+    width: 50%;
+}
+
+#text-column {
+    float: left;
+    width: 50%;
+
+}
