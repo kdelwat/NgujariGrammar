@@ -145,53 +145,56 @@ aside {
     };
 }
 
-#nav {
+#menu {
     list-style: none;
-}
 
-#nav li {
-    float: left;
-    position: relative;
-    margin: 0px 10px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
+    li {
+        float: left;
+        position: relative;
+        margin: 0px 10px 0px 0px;
+        padding: 0px 0px 0px 0px;
 
-#nav li:hover {
-    background: lighten($green, 10%);
-}
+        // Section link
+        a {
+            display: block;
+            padding: 2px 5px 2px 5px;
+            font-size: $h3-font-size;
+        }
 
-#nav a {
-    display: block;
-    padding: 2px 5px 2px 5px;
-    font-size: $h3-font-size;
-}
+        // The hidden options menu
+        ul {
+            list-style: none;
+            position: absolute;
+            top: 15px;
+            left: -9999px;
+            background: lighten($green, 10%);
 
-#nav ul {
-    list-style: none;
-    position: absolute;
-    top: 15px;
-    left: -9999px;
-    background: lighten($green, 10%);
-}
+            li {
+                float: none;
+                margin-right: 0px;
+            }
+        }
 
-#nav ul li {
-    float: none;
-    margin-right: 0px;
-}
+        &:hover {
+            background: lighten($green, 10%);
 
-#nav li:hover ul {
-    left: 0;
-}
+            // The options menu, displayed when the section link is hovered over
+            ul {
+                left: 0;
 
-#nav li:hover ul li a {
-    font-size: $body-font-size;
-    padding-left: 7px;
-}
+                li a {
+                    font-size: $body-font-size;
+                    padding-left: 7px;
 
-#nav li:hover ul li a:hover {
-    background-color: $green;
-    border-left: 2px solid $blue;
-    padding-left: 5px;
+                    &:hover {
+                        background-color: $green;
+                        border-left: 2px solid $blue;
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 h1.title {

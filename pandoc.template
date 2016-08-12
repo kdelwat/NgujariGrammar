@@ -40,7 +40,7 @@ $endif$
 
 <header>
   <div id="sidebar-toggle">Toggle</div>
-  <ul id="nav">
+  <ul id="menu">
     <li>
       <a href="../index.html">Home</a>
     </li>
