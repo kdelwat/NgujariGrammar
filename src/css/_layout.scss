@@ -159,20 +159,27 @@ aside {
         margin: 0px 10px 0px 0px;
         padding: 0px 0px 0px 0px;
 
+        &:last-child {
+            margin: 0px 0px 0px 0px;
+        }
+
         // Section link
         a {
             display: block;
             padding: 2px 5px 2px 5px;
-            font-size: $h3-font-size;
+            font-size: $body-font-size;
+            color: $background-colour;
+            font-weight: bold;
         }
 
         // The hidden options menu
         ul {
             list-style: none;
             position: absolute;
-            top: 15px;
+            top: 10px;
             left: -9999px;
             background: lighten($green, 10%);
+
 
             li {
                 float: none;
@@ -189,7 +196,10 @@ aside {
 
                 li a {
                     font-size: $body-font-size;
+                    color: $text-colour;
+                    font-weight: normal;
                     padding-left: 7px;
+
 
                     &:hover {
                         background-color: $green;
