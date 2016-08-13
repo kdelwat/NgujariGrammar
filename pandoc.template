@@ -39,7 +39,7 @@ $if(subtitle)$
 $endif$
 
 <header>
-  <div id="sidebar-toggle">Toggle</div>
+  <span id="sidebar-toggle" class="icono-book"></span>
   <ul id="menu">
     <li>
       <a href="../index.html">Home</a>
@@ -60,7 +60,7 @@ $endif$
     </li>
   </ul>
 
-  <div id="aside-toggle">Toggle</div>
+  <span id="aside-toggle" class="icono-commentEmpty"></span>
 </header>
 
 <app>
