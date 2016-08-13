@@ -78,14 +78,14 @@ th, td {
 }
 
 tr {
-    .even {
+    &.even {
         background-color: $table-even-colour;
         &:hover {
             background-color: darken($table-even-colour, 20%);
         }
     }
 
-    .odd {
+    &.odd {
         background-color: $table-odd-colour;
 
         &:hover {
