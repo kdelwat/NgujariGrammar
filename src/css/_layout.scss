@@ -76,6 +76,8 @@ aside {
             background-color: lighten($blue, 20%);
             padding: 0px;
             border-left: 2px solid $blue;
+            transition-duration: 0.25s;
+            transition-property: background-color;
         }
     }
 
@@ -189,6 +191,7 @@ aside {
 
         &:hover {
             background: lighten($green, 10%);
+            transition: 0.25s;
 
             // The options menu, displayed when the section link is hovered over
             ul {
@@ -205,6 +208,8 @@ aside {
                         background-color: $green;
                         border-left: 2px solid $blue;
                         padding-left: 5px;
+                        transition-duration: 0.25s;
+                        transition-property: background-color;
                     }
                 }
             }
