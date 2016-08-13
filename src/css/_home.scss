@@ -1,6 +1,10 @@
 //_home.scss
 // Styles exclusively for the site home page
 
+app.home {
+    justify-content: center;
+}
+
 ol.homepage-list {
     list-style-type: decimal;
 }
@@ -43,4 +47,13 @@ h2.subtitle {
     float: left;
     width: 50%;
 
+}
+
+
+// Mobile breakpoint
+@media (max-width: $mobile-max) {
+    // Center contents of header.
+    header {
+        justify-content: center;
+    };
 }
