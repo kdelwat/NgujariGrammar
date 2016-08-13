@@ -39,12 +39,12 @@
     position: relative;
     font-style: italic;
 
-    &.definition {
+    .definition {
         display: none;
     }
 
     &:hover {
-        &.definition {
+        .definition {
             display: inline-block;
             background-color: $example-colour;
 
