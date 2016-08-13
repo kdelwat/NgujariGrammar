@@ -46,6 +46,8 @@ article {
     flex-grow: 1;
     order: 1;
     max-width: $body-width;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 aside {
@@ -150,6 +152,11 @@ aside {
     #sidebar-toggle, #aside-toggle {
         display: block;
     };
+
+
+    #sidebar-content {
+        font-size: $body-font-size + 4;
+    };
 }
 
 #menu {
@@ -216,7 +223,4 @@ aside {
         }
     }
 
-    #sidebar-content {
-        font-size: $body-font-size + 4;
-    }
 }
