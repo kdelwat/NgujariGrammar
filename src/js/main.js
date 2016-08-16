@@ -1,7 +1,20 @@
 $(document).ready(function(){
     toggle_sidebar();
     toggle_aside();
+
     $("article").sidenotes();
+    if ($(window).width() <= 1000) {
+        $("article").sidenotes("hide");
+    }
+
+    $(window).resize(function() {
+        if ($(this).width() <= 1000) {
+            $("article").sidenotes("hide");
+        } else {
+            $("article").sidenotes("show");
+        }
+    });
+
 });
 
 function toggle_sidebar() {
