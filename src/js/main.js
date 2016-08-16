@@ -1,6 +1,7 @@
 $(document).ready(function(){
     toggle_sidebar();
     toggle_aside();
+    $("article").sidenotes();
 });
 
 function toggle_sidebar() {
@@ -32,3 +33,4 @@ function toggle_aside() {
         }
     });
 }
+

@@ -45,10 +45,8 @@ a {
     font-family: $font;
 }
 
-app a {
-    background-color: $rule-colour;
-    border-radius: 50px;
-    padding: 2px 5px 2px 5px;
+article a {
+    text-decoration: underline;
 }
 
 table {

@@ -68,3 +68,13 @@
     font-weight: normal;
     text-align: justify;
 }
+
+aside.sidenote {
+    left: 100%;
+    position: absolute;
+    width: 200px;
+
+    p {
+        display: inline;
+    }
+}
