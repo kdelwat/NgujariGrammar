@@ -80,7 +80,7 @@ $endif$
       $body$
     </article>
 
-    <aside>Content</aside>
+    <aside></aside>
 </app>
 
 $for(include-after)$

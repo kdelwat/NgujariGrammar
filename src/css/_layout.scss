@@ -57,6 +57,13 @@ aside {
     flex-grow: 0;
 }
 
+@media (max-width: 2 * $sidebar-width + $body-width ) {
+    aside {
+        flex-basis: 0;
+    }
+}
+
+
 // Sidebar controls for the mobile view (invisible on desktop)
 #sidebar-toggle, #aside-toggle {
     display: none;
