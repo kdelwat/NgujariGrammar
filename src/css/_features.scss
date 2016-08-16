@@ -69,12 +69,33 @@
     text-align: justify;
 }
 
+.footnoteRef {
+    vertical-align: super;
+    font-size: 0.7em;
+    text-decoration: none;
+}
+
 aside.sidenote {
-    left: 100%;
+    left: 105%;
     position: absolute;
     width: 200px;
 
+    font-size: $small-font-size;
+
     p {
         display: inline;
+        color: lighten($text-colour, 20%);
+
+    }
+
+    a {
+        display: none;
+    }
+
+    .ref-mark {
+        color: lighten($text-colour, 40%);
+        margin-right: 0.5em;
+        position: absolute;
+        left: -1em;
     }
 }
