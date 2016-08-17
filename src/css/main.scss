@@ -21,6 +21,11 @@ $table-header-colour: darken($table-colour, 20%);
 
 //Layout definitions
 $body-width: 600px;
+$body-margin: 10px;
+
+// Space on each side of the main content
+$gutter-width: 20px;
+
 $mobile-body-width: 200px;
 $sidebar-width: 200px;
 $sidebar-toggle-width: 5px;
