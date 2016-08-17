@@ -12,9 +12,17 @@ h1 {
 
     &.title {
         font-size: $title-font-size;
-        text-align: center;
+        text-align: right;
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    &.chapter-title {
+        font-size: $h3-font-size;
+        text-align: right;
         padding-top: 30px;
         padding-bottom: 0px;
+        font-style: italic;
     }
 }
 

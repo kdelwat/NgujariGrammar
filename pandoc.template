@@ -71,6 +71,7 @@ $endif$
     </nav>
 
     <article>
+      <h1 class="chapter-title">Chapter 1</h1>
       $if(title)$
       <h1 class="title">$title$</h1>
       $endif$
