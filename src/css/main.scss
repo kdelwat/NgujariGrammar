@@ -7,10 +7,12 @@ $blue: #6F80AB;
 $green: #7AC97F;
 $black: #303030;
 
-$background-colour: lighten($blue, 40%);
+$background-colour: #f4f4f4;
 $example-colour: lighten($blue, 20%);
 $rule-colour: $orange;
 $text-colour: $black;
+$light-text-colour: #666666;
+$lightest-text-colour: #E0E0E0;
 
 $table-colour: lighten($green, 20%);
 $table-even-colour: $table-colour;

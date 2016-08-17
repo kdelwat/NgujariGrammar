@@ -41,9 +41,8 @@ nav {
     z-index: 2;
     transition-duration: 1s;
 
-    background: lighten($blue, 35%);
-    border-right: 2px solid lighten($blue, 20%);
-
+    //background: lighten($blue, 35%);
+    //border-right: 2px solid lighten($blue, 20%);
 
     &.open {
         left: 0px;
@@ -65,8 +64,8 @@ article {
 
 // Sidebar content
 #sidebar-content {
-    padding: 5px;
-    font-size: $body-font-size;
+    margin: 10px 5px 5px 5px;
+    font-size: $small-font-size;
 
     a {
         background-color: transparent;
@@ -74,6 +73,8 @@ article {
         padding: 0px 0px 0px 7px;
         display: block;
         text-transform: uppercase;
+
+        color: $light-text-colour;
 
         &:hover {
             background-color: lighten($blue, 20%);
@@ -99,7 +100,19 @@ article {
         // First-level list items
         li {
             font-weight: bold;
-            border-bottom: 0.1em solid lighten($blue, 30%);
+            position: relative;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 80%;
+                top: 105%;
+                left: 7px;
+                border-bottom: 0.1em solid $lightest-text-colour;
+            }
+
+            margin-bottom: 1em;
         }
 
         // Second-level list items
@@ -111,8 +124,12 @@ article {
             li {
                 font-weight: normal;
                 margin-left: 5px;
-                font-size: $body-font-size + 2;
-                border-bottom: none;
+
+                &:after {
+                    display: none;
+                }
+
+                margin-bottom: 0;
             }
         }
     }
