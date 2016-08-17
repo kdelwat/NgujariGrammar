@@ -28,45 +28,39 @@ header {
 
 app {
     flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
     font-size: $body-font-size;
     line-height: 1.5;
     color: $text-colour;
 }
 
 nav {
-    flex-basis: $sidebar-width;
-    order: 0;
+    display: block;
+    position: absolute;
+    left: -$sidebar-width;
+    height: 100%;
+    z-index: 2;
+    transition-duration: 1s;
+
     background: lighten($blue, 35%);
     border-right: 2px solid lighten($blue, 20%);
-}
+
+
+    &.open {
+        left: 0px;
+    }
+};
 
 article {
-    flex-grow: 1;
-    order: 1;
+    margin: 0 auto 0 auto;
     max-width: $body-width;
     padding-left: 10px;
     padding-right: 10px;
     position: relative;
 }
 
-aside {
-    flex-basis: $sidebar-width;
-    order: 2;
-    flex-grow: 0;
-}
-
-@media (max-width: 2 * $sidebar-width + $body-width ) {
-    aside {
-        flex-basis: 0;
-    }
-}
-
-
 // Sidebar controls for the mobile view (invisible on desktop)
-#sidebar-toggle, #aside-toggle {
-    display: none;
+#sidebar-toggle{
+    display: block;
 }
 
 // Sidebar content
@@ -126,45 +120,11 @@ aside {
 
 // Mobile breakpoint
 @media (max-width: $mobile-max) {
+
     // Center contents of header, and place toggles to the sides.
     header {
         justify-content: space-between;
     };
-
-    // Both the nav and aside become columns which float in on toggle.
-    nav {
-        display: block;
-        position: absolute;
-        left: -$sidebar-width;
-        height: 100%;
-        z-index: 2;
-
-        transition-duration: 1s;
-
-        &.open {
-            left: 0px;
-        }
-    };
-
-    aside {
-        display: block;
-        position: absolute;
-        right: -$sidebar-width;
-        height: 100%;
-        z-index: 2;
-
-        transition-duration: 1s;
-
-        &.open {
-            right: 0px;
-        }
-    };
-
-    // Show sidebar toggles
-    #sidebar-toggle, #aside-toggle {
-        display: block;
-    };
-
 
     #sidebar-content {
         font-size: $body-font-size + 4;
