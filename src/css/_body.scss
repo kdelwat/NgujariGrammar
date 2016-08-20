@@ -14,7 +14,22 @@ h1 {
         font-size: $title-font-size;
         text-align: right;
         padding-top: 0px;
-        padding-bottom: 30px;
+        padding-bottom: 0px;
+        padding-right: 5px;
+        margin-bottom: 30px;
+
+        position: relative;
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: -20px;
+            top: 10%;
+            bottom: 0px;
+            width: 15px;
+            background-color: deeppink;
+        }
     }
 
     &.chapter-title {
