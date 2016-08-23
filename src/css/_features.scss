@@ -8,7 +8,7 @@
 }
 
 .example-target {
-    font-size: $body-font-size + 2;
+    font-size: $size-5 + 2;
 }
 
 .example-gloss {
@@ -20,7 +20,7 @@
 }
 
 .example-tag {
-    @include tag($example-colour, $background-colour);
+    @include tag($example-colour, $background);
 }
 
 .rule {
@@ -28,7 +28,7 @@
 }
 
 .rule-name {
-    font-family: $font;
+    font-family: $family-sans-serif;
 }
 
 .rule-definition {
@@ -55,8 +55,8 @@
             width: 10em;
             border-radius: 10px;
 
-            font-size: $small-font-size;
-            font-family: $font;
+            font-size: $size-6;
+            font-family: $family-sans-serif;
             font-style: normal;
             font-weight: bold;
         }
@@ -76,15 +76,15 @@
 }
 
 aside.sidenote {
-    left: $body-width + 2 * $body-margin + $gutter-width;
+    left: 105%;
     position: absolute;
     width: 200px;
 
-    font-size: $small-font-size;
+    font-size: $size-6;
 
     p {
         display: inline;
-        color: lighten($text-colour, 20%);
+        color: $text-light;
     }
 
     a {
@@ -92,7 +92,7 @@ aside.sidenote {
     }
 
     .ref-mark {
-        color: lighten($text-colour, 40%);
+        color: $text-light;
         margin-right: 0.5em;
         position: absolute;
         left: -1em;

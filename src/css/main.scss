@@ -9,7 +9,6 @@ $green: #7AC97F;
 $black: #303030;
 
 $background-colour: #f4f4f4;
-$example-colour: lighten($blue, 20%);
 $rule-colour: $orange;
 $text-colour: $black;
 $light-text-colour: #666666;
@@ -35,7 +34,6 @@ $sidebar-toggle-mobile-width: 10px;
 $header-height: 40px;
 
 $header-padding: 0.5em;
-$box-padding: 15px; //the padding above and below tables, rules, and examples
 
 //Typography definitions
 $body-font-size: 16px;
@@ -55,12 +53,21 @@ $font: 'Open Sans', sans-serif;
 
 @import 'layout';
 @import 'body';
-@import 'mixins';
-@import 'features';
 @import 'home'
 */
 
+$box-padding: 15px; //the padding above and below tables, rules, and examples
+
+$blue: #6F80AB;
+$orange: #FFC99B;
+
+$rule-colour: $orange;
+$example-colour: lighten($blue, 20%);
+
 @import "bulma";
+
+@import 'mixins';
+@import 'features';
 
 aside.menu {
     ul {
@@ -75,4 +82,9 @@ h1.page-title {
 
 table {
     @extend .table;
+}
+
+.content {
+    text-align: justify;
+    position: relative;
 }
