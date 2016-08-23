@@ -67,3 +67,8 @@ aside.menu {
         @extend .menu-list;
     }
 }
+
+h1.title {
+    text-align: center;
+    font-size: $size-1;
+}

@@ -35,6 +35,18 @@ $endfor$
   </div>
 </nav>
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        $if(title)$
+        $title$
+        $endif$
+      </h1>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="columns is-desktop">
     <div class="column">
@@ -46,10 +58,7 @@ $endfor$
     </div>
     <div class="column is-half">
       <div class="content is-medium">
-        <h1 class="chapter-title">Chapter 1</h1>
-        $if(title)$
-        <h1 class="title">$title$</h1>
-        $endif$
+
         $body$
       </div>
     </div>
