@@ -1,3 +1,4 @@
+/**
 // Responsive breakpoints
 $mobile-max: 800px;
 
@@ -57,3 +58,12 @@ $font: 'Open Sans', sans-serif;
 @import 'mixins';
 @import 'features';
 @import 'home'
+*/
+
+@import "bulma";
+
+aside.menu {
+    ul {
+        @extend .menu-list;
+    }
+}

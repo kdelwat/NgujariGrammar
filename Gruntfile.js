@@ -36,13 +36,14 @@ module.exports = function(grunt) {
         },
         sass: {
             options: {
-                sourceMap: true
+                sourceMap: true,
+                includePaths: ['./node_modules/bulma']
             },
             dist: {
                 files: {
                     'build/css/main.css': 'src/css/main.scss'
-                }
-            }
+                },
+            },
         },
         uglify: {
             options: {},

@@ -1,16 +1,16 @@
 $(document).ready(function(){
     toggle_sidebar();
 
-    $("article").sidenotes();
+    $("div.content").sidenotes();
     if ($(window).width() <= 1000) {
-        $("article").sidenotes("hide");
+        $("div.content").sidenotes("hide");
     }
 
     $(window).resize(function() {
         if ($(this).width() <= 1000) {
-            $("article").sidenotes("hide");
+            $("div.content").sidenotes("hide");
         } else {
-            $("article").sidenotes("show");
+            $("div.content").sidenotes("show");
         }
     });
 
