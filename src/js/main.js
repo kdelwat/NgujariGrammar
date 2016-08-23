@@ -2,12 +2,12 @@ $(document).ready(function(){
     toggle_sidebar();
 
     $("div.content").sidenotes();
-    if ($(window).width() <= 1000) {
+    if ($(window).width() <= 979) {
         $("div.content").sidenotes("hide");
     }
 
     $(window).resize(function() {
-        if ($(this).width() <= 1000) {
+        if ($(this).width() <= 979) {
             $("div.content").sidenotes("hide");
         } else {
             $("div.content").sidenotes("show");
