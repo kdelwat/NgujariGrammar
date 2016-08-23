@@ -68,7 +68,11 @@ aside.menu {
     }
 }
 
-h1.title {
+h1.page-title {
     text-align: center;
     font-size: $size-1;
+}
+
+table {
+    @extend .table;
 }

@@ -38,7 +38,7 @@ $endfor$
 <section class="hero is-small is-primary">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">
+      <h1 class="title page-title">
         $if(title)$
         $title$
         $endif$
@@ -58,7 +58,6 @@ $endfor$
     </div>
     <div class="column is-6 is-offset-1">
       <div class="content is-medium">
-
         $body$
       </div>
     </div>
