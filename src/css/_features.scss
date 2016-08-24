@@ -46,19 +46,16 @@
     &:hover {
         .definition {
             display: inline-block;
-            background-color: $example-colour;
-
+            @extend .box;
             position: absolute;
             margin-left: 2px;
-            padding-left: 4px;
-            padding-right: 4px;
-            width: 10em;
-            border-radius: 10px;
+            width: 15em;
+            padding: 10px;
 
             font-size: $size-6;
-            font-family: $family-sans-serif;
             font-style: normal;
             font-weight: bold;
+            text-align: left;
         }
     }
 }
@@ -66,7 +63,7 @@
 .full-definition {
     font-style: italic;
     font-weight: normal;
-    text-align: justify;
+    text-align: left;
 }
 
 .footnoteRef {
