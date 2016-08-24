@@ -18,6 +18,23 @@
     margin-bottom: $box-padding;
 }
 
+//Create a highlight line to the left of the body.
+@mixin highlight($colour) {
+    padding-left: 20px;
+    margin-top: $box-padding;
+    margin-bottom: $box-padding;
+
+    &:before{
+        position: absolute;
+        display: block;
+        content: "";
+        width: 12px;
+        left: -15px;
+        height: 100%;
+        background-color: $colour;
+    }
+}
+
 // Converts a div to a label in the bottom-right of a boxed div
 @mixin tag($shade-colour, $text-colour) {
     position: absolute;

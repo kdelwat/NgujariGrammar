@@ -25,6 +25,7 @@
 
 .rule {
     @include boxed($rule-colour);
+    position: relative;
 }
 
 .rule-name {
