@@ -20,7 +20,7 @@
 
 //Create a highlight line to the left of the body.
 @mixin highlight($colour) {
-    padding-left: 20px;
+    padding-left: 17px;
     margin-top: $box-padding;
     margin-bottom: $box-padding;
 
@@ -36,7 +36,7 @@
 }
 
 // Converts a div to a label in the bottom-right of a boxed div
-@mixin tag($shade-colour, $text-colour) {
+@mixin oldtag($shade-colour, $text-colour) {
     position: absolute;
     right: 0px;
     bottom: 0px;
@@ -51,4 +51,21 @@
     font-family: $family-sans-serif;
     background-color: darken($shade-colour, 30%);
     color: $text-colour;
+}
+
+@mixin tag($colour) {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    padding-right: 5px;
+    padding-left: 5px;
+
+    //border-left: 1px solid darken($shade-colour, 10%);
+    //border-top: 1px solid darken($shade-colour, 10%);
+
+    font-size: $size-5;
+    font-family: $family-sans-serif;
+    //background-color: darken($shade-colour, 30%);
+    color: $text-light;
 }

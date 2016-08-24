@@ -2,9 +2,9 @@
 // Styles for custom Markdown features
 
 .example {
-    @include boxed($example-colour);
+    @include highlight($example-colour);
     position: relative;
-
+    color: $grey;
 }
 
 .example-target {
@@ -20,12 +20,13 @@
 }
 
 .example-tag {
-    @include tag($example-colour, $background);
+    @include tag($example-colour);
 }
 
 .rule {
-    @include boxed($rule-colour);
+    @include highlight($rule-colour);
     position: relative;
+    color: $grey;
 }
 
 .rule-name {

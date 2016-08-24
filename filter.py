@@ -27,7 +27,7 @@ def create_example(example_no, example_list):
         all_examples.append(target + gloss + native)
 
     example_id = 'example-' + str(example_no)
-    id_span = '<span class="example-tag">{0}</span>'.format(example_no)
+    id_span = '<span class="example-tag">({0})</span>'.format(example_no)
     html = '<div class="example" id="{0}">{1}{2}</div>'.format(example_id, id_span, '<br>'.join(all_examples))
 
     return RawBlock('html', html)
