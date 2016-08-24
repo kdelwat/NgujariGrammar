@@ -58,6 +58,13 @@ $font: 'Open Sans', sans-serif;
 
 $box-padding: 15px; //the padding above and below tables, rules, and examples
 
+//Override Bulma variables
+
+$family-sans-serif: "Open Sans", sans-serif;
+
+//Colours
+$grey-dark: #444444;
+
 @import "bulma";
 
 $rule-colour: lighten($orange, 20%);
@@ -82,6 +89,7 @@ table {
     @extend .table;
 }
 
-.content {
+.content p{
+    font-size: 16px;
     text-align: justify;
 }
