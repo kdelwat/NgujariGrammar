@@ -7,8 +7,24 @@
     color: $grey;
 }
 
-.example-target {
+.example-target, .example-target-expanded {
     font-size: $size-5 + 2;
+}
+
+.example .example-target {
+    display: inline;
+}
+
+.example .example-target-expanded {
+    display: none;
+}
+
+.example:hover .example-target {
+    display: none;
+}
+
+.example:hover .example-target-expanded {
+    display: inline;
 }
 
 .example-gloss {
