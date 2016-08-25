@@ -51,7 +51,7 @@ def create_rule(rule_list):
 
 
 def lookup_definition(word):
-    with open('lexicon.csv', 'r') as f:
+    with open('src/data/lexicon.csv', 'r') as f:
         for line in csv.DictReader(f):
             if line['Conword'] == word:
                 return line

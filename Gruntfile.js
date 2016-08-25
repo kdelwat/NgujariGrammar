@@ -15,7 +15,7 @@ module.exports = function(grunt) {
             options: {},
             content: {
                 options: {
-                    flags: '--include-in-header ./src/html/header.html --template ./pandoc.template --filter ./filter.py --toc'
+                    flags: '--include-in-header ./src/html/header.html --template ./src/templates/chapter.html --filter ./src/scripts/pandoc_filter.py --toc'
                 },
                 expand: true,
                 cwd: 'src/content/',
