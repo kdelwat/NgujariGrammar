@@ -66,10 +66,16 @@ $family-sans-serif: "Open Sans", sans-serif;
 $grey-dark: #444444;
 $grey: #666666;
 
+$pink: #FF2BE4;
+$red: #FF271F;
+$purple: #941FFF;
+
+$primary: $pink;
+
 @import "bulma";
 
-$rule-colour: lighten($orange, 20%);
-$example-colour: lighten($green, 20%);
+$rule-colour: $purple;
+$example-colour: $red;
 
 @import 'mixins';
 @import 'features';
