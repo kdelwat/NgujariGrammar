@@ -57,4 +57,4 @@ def main(template, lexicon, output):
         f.write(temp.replace('{data}', data))
 
 if __name__ == '__main__':
-    print(main('src/lexicon.html', 'src/data/lexicon.csv', 'build/lexicon.html'))
+    print(main('src/templates/lexicon.html', 'src/data/lexicon.csv', 'build/lexicon.html'))

@@ -77,6 +77,15 @@ module.exports = function(grunt) {
                 tasks: ['copy'],
                 options: {},
             }
+        },
+        run: {
+            options: {
+
+            },
+            lexicon: {
+                cmd: 'python',
+                args: ['src/scripts/gen_lexicon.py']
+            }
         }
     });
 
@@ -86,8 +95,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-run');
 
     grunt.registerTask('default', ['node_pandoc', 'sass', 'uglify', 'jshint', 'copy']);
 }
-
-
