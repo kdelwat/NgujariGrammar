@@ -2,14 +2,49 @@
 
 The source code for the interactive grammar of the Ngujari constructed language.
 
-The site is built from Markdown files in the `/src/content` folder, using
-[pandoc](http://pandoc.org/) and a custom Python filter to convert content to
-HTML.
+The site is built from Markdown files, using [pandoc](http://pandoc.org/) with a
+custom Python filter to convert content to HTML.
+
+Built using the excellent CSS framework [bulma](http://bulma.io/),
+[jquery.sidenotes](https://github.com/acdlite/jquery.sidenotes) for responsive
+sidenotes, and [list.js](http://www.listjs.com/) for the searchable lexicon.
+
+## Installation
+
+1. Clone or download the repository and open a terminal in the base directory.
+2. Install the requirements, ensuring the executables `pandoc` and `python` are in your PATH:
+
+    + [pandoc](http://pandoc.org/)
+    + [python](https://www.python.org/)
+    + [node](https://nodejs.org/en/)
+
+3. Run `pip install pandocfilters` to install the Python dependency.
+4. Run `npm install` to install all Node dependencies.
+5. Run `grunt` to build the site for the first time, including CSS and Javascript.
+6. Run `grunt run:lexicon` to build the lexicon page.
+7. All set!
+
+## Usage
+
+There are three sections to the site: chapters, texts, and the lexicon. Any .md
+file in the `src/content` folder will be formatted as a chapter in the grammar.
+and any in the `src/texts` folder will be formatted as an example text, with
+just a simple `grunt update`.
+
+However, both the chapter and text overview pages (`src/chapters.html` and
+`src/texts.html`) must be manually updated to include new items. I'll try to
+autogenerate it in the future but for now it isn't too much of a hassle.
+
+Finally, the lexicon page is automatically generated from the CSV file
+`src/data/lexicon.csv`.
+
+The entire site is created in the `build` directory, which can then be uploaded
+directly to a web directory. Behold the beauty of static generation!
 
 ## Markdown Features
 
-The Python filter (`filter.py`) implements new Markdown features specific to
-linguistics.
+The Python filter (`src/scripts/pandoc_filter.py`) implements new Markdown
+features specific to linguistics.
 
 ### Examples
 
@@ -42,10 +77,6 @@ Becomes:
 </div>
 ```
 
-Which renders as:
-
-![](http://imgur.com/wis8MUJl.png)
-
 ### Rules
 
 Rules defining grammatical constructs can be created using a new syntax.
@@ -70,10 +101,6 @@ Becomes:
 </div>
 ```
 
-Which renders as:
-
-![](http://imgur.com/cWOvg2Tl.png)
-
 ### Definitions
 
 Definitions of non-native words can be made to appear as hovertext, by surrounding them in backticks like ``so``.
@@ -95,9 +122,3 @@ Only the `Conword`, `Local`, and `Definitions` fields are currently used. The Pa
     </span>
 </span>
 ```
-
-Which renders when the non-native word is moused-over as the following hovertext:
-
-![](https://i.imgur.com/kv05N6i.png)
-
-

@@ -98,4 +98,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-run');
 
     grunt.registerTask('default', ['node_pandoc', 'sass', 'uglify', 'jshint', 'copy']);
+    grunt.registerTask('update', ['node_pandoc']);
 }

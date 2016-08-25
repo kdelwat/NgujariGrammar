@@ -16,6 +16,7 @@
     "grunt-contrib-uglify": "~2.0.0",
     "grunt-contrib-watch": "~1.0.0",
     "grunt-contrib-copy": "~1.0.0",
-    "grunt-run": "~0.6.0"
+    "grunt-run": "~0.6.0",
+    "bulma": "~0.1.2"
   }
 }
