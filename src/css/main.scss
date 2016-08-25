@@ -135,3 +135,56 @@ a.is-home {
     font-size: $size-5;
     padding-left: 1em;
 }
+
+//Lexicon formatting
+.lexicon {
+    font-size: 16px;
+
+    li:not(:first-child) {
+            padding-top: 1em;
+
+    }
+}
+
+h1.lexicon-word {
+    display: inline;
+    font-size: $size-4;
+}
+
+h2.part-of-speech {
+    display: inline;
+    padding-left: 0.5em;
+
+    font-size: $size-5;
+    font-style: italic;
+    color: $grey;
+}
+
+ul.lexicon-definition {
+    list-style-type: none;
+    margin-left: 20px;
+
+    li {
+        &:first-child {
+            padding-top: 1em;
+        }
+
+        &:not(:first-child) {
+            padding-top: 3px;
+        }
+    }
+
+    em {
+        padding-right: 2px;
+        color: $grey;
+        font-size: $size-6;
+    }
+}
+
+p.cultural-note {
+    padding-top: 1em;
+    margin-left: 20px;
+    font-size: $size-6;
+    color: $grey;
+
+}
