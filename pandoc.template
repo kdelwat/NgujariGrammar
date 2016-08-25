@@ -20,7 +20,7 @@ $endfor$
 
 <nav class="nav has-shadow">
   <div class="nav-left">
-    <a class="nav-item is-tab" href="#">Home</a>
+    <a class="nav-item is-tab is-home" href="#">Ngujari</a>
   </div>
 
   <span class="nav-toggle">
@@ -30,8 +30,10 @@ $endfor$
   </span>
 
   <div class="nav-right nav-menu">
-    <a class="nav-item is-tab" href="#">Chapters</a>
+    <a class="nav-item is-tab is-active" href="#">Chapters</a>
     <a class="nav-item is-tab" href="#">Texts</a>
+    <a class="nav-item is-tab" href="#">Lexicon</a>
+
   </div>
 </nav>
 
