@@ -120,3 +120,18 @@ a.is-home {
     font-size: $size-5;
     text-transform: uppercase;
 }
+
+.contents-link {
+    font-size: $size-2;
+    color: $text;
+    display: block;
+}
+
+.contents-link:hover {
+    color: $primary;
+}
+
+.contents-summary {
+    font-size: $size-5;
+    padding-left: 1em;
+}
