@@ -32,7 +32,7 @@ def create_example(example_no, example_list):
         target = '<div class="example-target">{0}</div>'.format(strip_example(examples[0]))
         target_expanded = '<div class="example-target-expanded">{0}</div>'.format(examples[0])
         gloss = '<div class="example-gloss">{0}</div>'.format(examples[1])
-        native = '<div class="example-native">{0}</div>'.format(examples[2])
+        native = '<div class="example-native">{0}</div>'.format(', '.join(examples[2:]))
         all_examples.append(target + target_expanded + gloss + native)
 
     example_id = 'example-' + str(example_no)
