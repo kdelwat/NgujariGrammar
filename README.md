@@ -22,6 +22,9 @@ sidenotes, and [list.js](http://www.listjs.com/) for the searchable lexicon.
 4. Run `npm install` to install all Node dependencies.
 5. Run `grunt` to build the site for the first time, including CSS and Javascript.
 6. Run `grunt run:lexicon` to build the lexicon page.
+7. Place [list.js.min](http://www.listjs.com/) and
+   [jquery.sidenotes.min.js]((https://github.com/acdlite/jquery.sidenotes) into
+   the `build/js` folder (they'll stay there on rebuild).
 7. All set!
 
 ## Usage
