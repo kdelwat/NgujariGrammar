@@ -92,6 +92,11 @@ h1.page-title {
     font-size: $size-1;
 }
 
+h2.page-sub-title {
+    text-align: center;
+    font-size: $size-4;
+}
+
 table {
     @extend .table;
 }
@@ -236,5 +241,17 @@ hr {
         p, ol {
             width: 100%;
         }
+    }
+}
+
+p.title a {
+    color: inherit;
+}
+
+p.intro {
+    font-size: 16px;
+    a {
+        color: inherit;
+        border-bottom: 1px solid white;
     }
 }
