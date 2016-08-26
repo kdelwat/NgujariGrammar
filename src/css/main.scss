@@ -62,20 +62,36 @@ $box-padding: 15px; //the padding above and below tables, rules, and examples
 
 $family-sans-serif: "Open Sans", sans-serif;
 
-//Colours
 $grey-dark: #444444;
 $grey: #666666;
 
-$pink: #FF2BE4;
-$red: #FF271F;
-$purple: #941FFF;
+//Material colours, from https://material.google.com/style/color.html
+$pink: #e91e63;
+$purple: #9c27b0;
+$red: #f44336;
+$blue: #2196f3;
+$indigo: #3f51b5;
+$deep-purple: #673ab7;
+$teal: #009688;
+$cyan: #00bcd4;
+$light-blue: #03a9f4;
+$green: #4caf50;
+$light-green: #8bc34a;
+$lime: #cddc39;
+$yellow: #ffeb3b;
+$amber: #ffc107;
+$orange: #ff9800;
+$deep-orange: #ff5722;
+$brown: #795548;
 
 $primary: $pink;
+$info: $purple;
+$success: $deep-purple;
+
+$rule-colour: $deep-purple;
+$example-colour: $purple;
 
 @import "bulma";
-
-$rule-colour: $purple;
-$example-colour: $red;
 
 @import 'mixins';
 @import 'features';
