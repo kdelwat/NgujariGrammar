@@ -39,13 +39,15 @@ $box-padding: 15px; //the padding above and below rules and examples
 @import 'mixins';
 @import 'features';
 
-
+// Style the TOC with the menu-list class, without having to set the class
 aside.menu {
+
     ul {
         @extend .menu-list;
     }
 }
 
+// Style hero images
 h1.page-title {
     text-align: center;
     font-size: $size-1;
@@ -56,14 +58,7 @@ h2.page-sub-title {
     font-size: $size-4;
 }
 
-table {
-    @extend .table;
-}
-
-.content p{
-    font-size: 16px;
-    text-align: left;
-}
+// Style content
 
 .content {
 
@@ -78,21 +73,32 @@ table {
     h3:not(:first-child) {
         margin-top: 25px;
     }
+
+    p {
+        font-size: 16px;
+        text-align: left;
+    }
 }
 
+table {
+    @extend .table;
+}
+
+// Style navbar
 a.is-home {
     font-size: $size-5;
     text-transform: uppercase;
 }
 
+// Style contents pages (chapters and texts)
 .contents-link {
     font-size: $size-2;
     color: $text;
     display: block;
-}
 
-.contents-link:hover {
-    color: $primary;
+    &:hover {
+        color: $primary;
+    }
 }
 
 .contents-summary {
@@ -100,13 +106,12 @@ a.is-home {
     padding-left: 1em;
 }
 
-//Lexicon formatting
+// Style lexicon
 .lexicon {
     font-size: 16px;
 
     li:not(:first-child) {
-            padding-top: 1em;
-
+        padding-top: 1em;
     }
 }
 
@@ -160,7 +165,7 @@ hr {
     margin-top: 20px;
 }
 
-// Formatting for texts
+// Style texts
 .text-section {
     table {
         table-layout: fixed;
@@ -175,8 +180,6 @@ hr {
         tbody tr:first-child td{
             padding-top: 0.6em;
         }
-
-
     }
 
     p, ol {
@@ -203,6 +206,7 @@ hr {
     }
 }
 
+// Style homepage
 p.title a {
     color: inherit;
 }
