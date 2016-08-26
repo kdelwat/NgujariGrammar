@@ -22,7 +22,10 @@ def tag(str, tag_id, cls=None):
 
 def format_definition(definition):
     '''Format a single definition string.'''
-    return definition.replace('(', '<em>(').replace(')', ')</em>') + ' ;'
+    if definition.count('(') == definition.count(')'):
+        return definition.replace('(', '<em>(').replace(')', ')</em>') + ' ;'
+    else:
+        return definition + ' ;'
 
 
 def definition_list(definition):
