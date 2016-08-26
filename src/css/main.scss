@@ -195,3 +195,45 @@ p.cultural-note {
 hr {
     margin-top: 20px;
 }
+
+// Formatting for texts
+.text-section {
+    table {
+        table-layout: fixed;
+
+        td {
+            border: none;
+            padding-bottom: 0.15em;
+            padding-top: 0.15em;
+
+        }
+
+        tbody tr:first-child td{
+            padding-top: 0.6em;
+        }
+
+
+    }
+
+    p, ol {
+        width: 75%;
+        margin: auto;
+        padding: 0 10px 10px 10px;
+
+    }
+
+    ol p {
+        width: 100%;
+    }
+
+    hr {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: $tablet - 1){
+        p, ol {
+            width: 100%;
+        }
+    }
+}

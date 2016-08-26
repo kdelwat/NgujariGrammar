@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="date" content="$date-meta$" />
+$endif$
+<title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+
+<nav class="nav has-shadow">
+  <div class="nav-left">
+    <a class="nav-item is-tab is-home" href="#">Ngujari</a>
+  </div>
+
+  <span class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+  <div class="nav-right nav-menu">
+    <a class="nav-item is-tab is-active" href="../chapters.html">Chapters</a>
+    <a class="nav-item is-tab" href="../texts.html">Texts</a>
+    <a class="nav-item is-tab" href="../lexicon.html">Lexicon</a>
+  </div>
+</nav>
+
+<section class="hero is-small is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title page-title">
+        $if(title)$
+        $title$
+        $endif$
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section class="section text-section">
+  <div class="columns">
+    <div class="column is-8-desktop is-offset-2-desktop">
+        $body$
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>

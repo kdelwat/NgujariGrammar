@@ -25,7 +25,7 @@ module.exports = function(grunt) {
             },
             texts: {
                 options: {
-                    flags: '--include-in-header ./src/html/header.html'
+                    flags: '--include-in-header ./src/html/header.html --template ./src/templates/text.html'
                 },
                 expand: true,
                 cwd: 'src/texts/',
