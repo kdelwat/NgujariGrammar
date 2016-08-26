@@ -9,6 +9,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+<script src="js/list.min.js"></script>
 </head>
 <body>
 
@@ -44,13 +45,31 @@
 <section class="section">
   <div class="columns">
     <div class="column is-half-desktop is-offset-one-quarter-desktop">
-      <ul class="list lexicon">
+      <div id="lexicon">
+        <div class="control is-horizontal">
+          <div class="control-label">
+            <label class="label">Search</label>
+          </div>
+          <div class="control is-expanded">
+            <input class="search input"/>
+          </div>
+        </div>
+
+      <ul class="list">
         {data}
       </ul>
-
+      </div>
     </div>
   </div>
 </section>
+
+<script>
+  var options = {
+    valueNames: ['lexicon-word', 'lexicon-definition']
+  };
+
+  var wordList = new List('lexicon', options);
+</script>
 
 </body>
 </html>

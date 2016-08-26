@@ -186,5 +186,8 @@ p.cultural-note {
     margin-left: 20px;
     font-size: $size-6;
     color: $grey;
+}
 
+.control-label {
+    flex-grow: 0;
 }
