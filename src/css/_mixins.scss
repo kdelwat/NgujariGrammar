@@ -1,24 +1,7 @@
 //_mixins.scss
 // Custom mixins
 
-// Surrounds a div in a box of specified colour
-@mixin boxed($colour) {
-    background: $colour;
-
-    padding-left: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-
-    border-left: 4px solid darken($colour, 30%);
-    border-top: 1px solid darken($colour, 10%);
-    border-bottom: 1px solid darken($colour, 10%);
-    border-right: 1px solid darken($colour, 10%);
-
-    margin-top: $box-padding;
-    margin-bottom: $box-padding;
-}
-
-//Create a highlight line to the left of the body.
+//Create a highlight line to the left of the div
 @mixin highlight($colour) {
     padding-left: 17px;
     margin-top: $box-padding;
@@ -35,25 +18,8 @@
     }
 }
 
-// Converts a div to a label in the bottom-right of a boxed div
-@mixin oldtag($shade-colour, $text-colour) {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-
-    padding-right: 5px;
-    padding-left: 5px;
-
-    border-left: 1px solid darken($shade-colour, 10%);
-    border-top: 1px solid darken($shade-colour, 10%);
-
-    font-size: $size-6;
-    font-family: $family-sans-serif;
-    background-color: darken($shade-colour, 30%);
-    color: $text-colour;
-}
-
-@mixin tag($colour) {
+// Convert a div to a label in the top-right of a highlighted div
+@mixin tag() {
     position: absolute;
     right: 0px;
     top: 0px;
@@ -61,11 +27,7 @@
     padding-right: 5px;
     padding-left: 5px;
 
-    //border-left: 1px solid darken($shade-colour, 10%);
-    //border-top: 1px solid darken($shade-colour, 10%);
-
     font-size: $size-5;
     font-family: $family-sans-serif;
-    //background-color: darken($shade-colour, 30%);
     color: $text-light;
 }

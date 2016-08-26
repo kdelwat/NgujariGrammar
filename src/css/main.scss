@@ -1,63 +1,3 @@
-/**
-// Responsive breakpoints
-$mobile-max: 800px;
-
-// Colour definitions
-$orange: #FFC99B;
-$blue: #6F80AB;
-$green: #7AC97F;
-$black: #303030;
-
-$background-colour: #f4f4f4;
-$rule-colour: $orange;
-$text-colour: $black;
-$light-text-colour: #666666;
-$lightest-text-colour: #E0E0E0;
-
-$table-colour: lighten($green, 20%);
-$table-even-colour: $table-colour;
-$table-odd-colour: lighten($table-colour, 10%);
-$table-header-colour: darken($table-colour, 20%);
-
-//Layout definitions
-$body-width: 600px;
-$body-margin: 10px;
-
-// Space on each side of the main content
-$gutter-width: 20px;
-
-$mobile-body-width: 200px;
-$sidebar-width: 200px;
-$sidebar-toggle-width: 5px;
-$sidebar-toggle-mobile-width: 10px;
-
-$header-height: 40px;
-
-$header-padding: 0.5em;
-
-//Typography definitions
-$body-font-size: 16px;
-$mobile-body-font-size: 14px;
-$tag-font-size: 14px;
-
-$homepage-title-font-size: 4.200em;
-
-$title-font-size: 5.202em;
-
-$h1-font-size: 1.424em;
-$h2-font-size: 1.266em;
-$h3-font-size: 1.125em;
-$small-font-size: 0.9em;
-
-$font: 'Open Sans', sans-serif;
-
-@import 'layout';
-@import 'body';
-@import 'home'
-*/
-
-$box-padding: 15px; //the padding above and below tables, rules, and examples
-
 //Override Bulma variables
 
 $family-sans-serif: "Open Sans", sans-serif;
@@ -92,6 +32,9 @@ $rule-colour: $deep-purple;
 $example-colour: $purple;
 
 @import "bulma";
+
+// Layout variables
+$box-padding: 15px; //the padding above and below rules and examples
 
 @import 'mixins';
 @import 'features';
