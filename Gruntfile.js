@@ -86,6 +86,13 @@ module.exports = function(grunt) {
                 cmd: 'python',
                 args: ['src/scripts/gen_lexicon.py']
             }
+        },
+        cssmin: {
+            target: {
+                files: {
+                    'build/css/main.css': 'build/css/main.css'
+                }
+            }
         }
     });
 
@@ -96,7 +103,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-run');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('default', ['node_pandoc', 'sass', 'uglify', 'jshint', 'copy']);
+    grunt.registerTask('default', ['node_pandoc', 'sass', 'uglify', 'jshint', 'copy', 'cssmin']);
     grunt.registerTask('update', ['node_pandoc']);
 }
