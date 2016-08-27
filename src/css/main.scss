@@ -227,10 +227,3 @@ p.intro {
     flex-grow: 1;
     justify-content: flex-end;
 }
-
-@media screen and (max-width: $tablet - 1) {
-    a.nav-item.is-tab {
-        padding-left: 6px;
-        padding-right: 6px;
-    }
-}
