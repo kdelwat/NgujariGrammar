@@ -218,3 +218,19 @@ p.intro {
         border-bottom: 1px solid white;
     }
 }
+
+//Style navbar
+.nav-right {
+    align-items: stretch;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: $tablet - 1) {
+    a.nav-item.is-tab {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
