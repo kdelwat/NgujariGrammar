@@ -227,3 +227,15 @@ p.intro {
     flex-grow: 1;
     justify-content: flex-end;
 }
+
+.content blockquote {
+    @include highlight($example-colour);
+    color: $grey;
+    position: relative;
+
+    background: transparent;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 0;
+    border-left: none;
+}
