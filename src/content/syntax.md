@@ -4,13 +4,42 @@
 
 # Alignment
 
-The alignment of Ngujari depends on whether the noun in question is an animate
-pronoun or not. For clauses with exclusively animate pronouns, the alignment is
-nominative-accusative, but otherwise it is ergative-nominative (i.e. the
-transitive patient and intransitive object are marked nominative and the
-transitive agent is marked ergative). This system applies only to intransitive
-and transitive verbs. For higher valencies, formed through valence modification,
-the extra arguments are assigned cases semantically.
+Ngujari has three alignment cases: ergative, nominative, and accusative. The use
+of these cases and their corresponding suffixes allows for a more free word
+order. Rather than the placement of words determining the role of nouns in a
+sentence, the cases take on the role.
+
+In a typical sentence, a noun can take on one of three roles:
+
+- The **agent** of a transitive verb, which is a noun performing an action on
+  another noun. In the sentence "The dog saw the cat", the dog is the agent.
+- The **object** of a transitive verb, or the noun that an action is being
+  performed on. The cat is the object of the above sentence.
+- The **subject** of an intransitive verb, which is a verb that only requires
+  one verb. For example, in the sentence "The dog barks", the dog is the
+  subject.
+
+The case assigned to each of these roles depends on the **morphosyntactic
+alignment**, which is a set of rules for determining each case. Ngujari is a
+**split ergative** language, meaning that the alignment changes depending on the
+nouns in use.
+
+For clauses whose agent and object (or subject) are animate pronouns, the
+alignment is **nominative-accusative**. In this alignment, the agent and subject
+are assigned the nominative case and the object takes the accusative case. The following example shows what this looks like in practice.
+
+(@) j-i wa-j nna-l miij-u-ø,
+    love.aux-pres 1s-nom 3s-acc love-an-1st,
+    I love her.
+
+All other clauses have an **ergative-nominative** alignment, which means that
+the object and subject are marked as nominative and the agent is marked as
+ergative. The sentence above can be rewritten without using the third-person
+pronoun, and will therefore be placed in the ergative-nominative alignment.
+
+(@) j-i wa-ø majuu-j miij-u-ø,
+    love.aux-pres 1s-erg kangaroo-nom love-an-2nd,
+    I love the kangaroo.
 
 # Clauses
 
