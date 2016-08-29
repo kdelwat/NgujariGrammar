@@ -28,7 +28,7 @@ For clauses whose agent and object (or subject) are animate pronouns, the
 alignment is **nominative-accusative**. In this alignment, the agent and subject
 are assigned the nominative case and the object takes the accusative case. The following example shows what this looks like in practice.
 
-(@) j-i wa-j nna-l miij-u-ø,
+(@) j-i wa-j nna-l miij-awu-ø,
     love.aux-pres 1s-nom 3s-acc love-an-1st,
     I love her.
 
@@ -37,96 +37,131 @@ the object and subject are marked as nominative and the agent is marked as
 ergative. The sentence above can be rewritten without using the third-person
 pronoun, and will therefore be placed in the ergative-nominative alignment.
 
-(@) j-i wa-ø majuu-j miij-u-ø,
+(@) j-i wa-ø majuu-j miij-awu-ø,
     love.aux-pres 1s-erg kangaroo-nom love-an-2nd,
     I love the kangaroo.
 
 # Clauses
 
+A clause is simply the most basic unit of a sentence. The only requirements are
+the presence of a verb.
+
 ## Verb Phrases
 
 (*)Verb Phrase: vp = aux [neg] np(s) [adv(s)] [val] v
 
-Verb phrases can be as simple as a single avalent verb, such as in "it's
-raining", or as complex as a tetravalent causative.
+A **verb phrase** is the primary structure of the clause. The most basic clause
+possible is an avalent^[An avalent verb is one that takes no nouns or
+arguments.] verb. This is demonstrated in the following example:
 
-In the prototypical verb clause, the following rules govern word order:
+(@) nn-uu rrunn-aa,
+    rain.aux-pres rain-inan-1st,
+    It's raining.
+
+In practice, most verb phrases will involve nouns. While word order is flexible,
+as can be seen in the pragmatics chapter, there are three rules which generally
+apply:
 
 1.  The verb's auxiliary appears at the beginning.
-
 2.  The verb itself appears at the end.
+3.  [Valence modifiers](morphology.html#valence-modification) appear immediately
+    before the verb.
 
-3.  Valence modifiers appear immediately before the verb.
-
-The following examples illustrate basic verb phrases:
-
-(@) k-i wa-j kurru-l ji wurr-u-ø,
-    strike.aux-pres 1s-nom 2s-ACC 0.val.2 electrically.storm-an-1st,
-    I strike you.
+Nouns are free to take most positions in the clause. The following examples illustrate basic verb phrases.
 
 (@) wann-uma maaju-maaju-j ka jinn-u-m,
     see.aux-pst kangaroo-pl-nom 2.val.1 eat-an-3rd,
     The kangaroos ate/were eating.
 
-Noun phrases tend to appear in order of importance to the statement as judged by
-the speaker.
+(@) k-i wa-j kurru-l ji wurr-u-ø,
+    strike.aux-pres 1s-nom 2s-acc 0.val.2 electrically.storm-an-1st,
+    I strike you.
+
+To demonstrate the flexibility of word order, which is helped by the use of case
+markings, the previous example can be rewritten in two other ways.
+
+(@) kurru-l wa-j k-i ji wurr-u-ø,
+    2s-acc 1s-nom strike.aux-pres 0.val.2 electrically.storm-an-1st,
+    I strike you.
+
+(@) wa-j kurru-l k-i ji wurr-u-ø,
+    1s-nom 2s-acc  strike.aux-pres 0.val.2 electrically.storm-an-1st,
+    I strike you.
+
+For the most part, nouns will be placed between the verb and its auxiliary. This
+order makes it easier to create more complex sentences.
 
 ## Noun Phrases
 
 (*)Noun Phrase: np = [adj(s)-attr] n
 
-A noun phrase consists of one noun, declined by case, and any number of
-adjectives and relative clauses. The noun tends to be placed first, followed by
-adjectives, although this can be inverted or even mixed according to pragmatic
-considerations. However, relative clauses always succeed the noun and
-adjectives.
+A verb phrase is able to take more than bare nouns. A **noun phrase** acts like
+a noun, but is modified by any number of adjectives and relative clauses.
+Relative clauses always come at the end of the noun phrase, but adjectives come
+both before and after the noun, depending on the [adjective
+order](#modifier-positioning) rules, as seen below.
 
 (@) birru-ø birruku miinna,
-    sea-ERG blue big,
+    sea-erg blue big,
     vast blue sea
 
 (@) kanaama yirlirna-j gu,
-    woven basket-NOM small,
+    woven basket-nom small,
     small woven basket
 
 ## Relative Clauses
 
 (*)Relative Clause: rc = [aux] [neg] v [val] [adv(s)] np(s)
 
-Relative clauses are *adjoined* to the noun phrase. The clause undergoes a
-transformation from the standard verb phrase by moving the verb to the position
-immediately following the auxiliary. If the relative clause is in the same tense
-and mood as the main clause, the relative auxiliary can be omitted. The valency
-modifier is free to be placed anywhere among the remaining noun phrases and
-adverbs, but typically follows the verb.
+A relative clause is a clause which modifies a noun (the **head noun**). Ngujari
+uses **adjoined** relative clauses, which means that the relative clause is
+simply appended to the end of the verb. However, it must first be placed into a
+slightly different form than a standard clause.
 
-If the head noun is a patient of the relative clause, the verb of the relative
-clause has its valence reduced by one.
+There are two cases for a relative clause:
+
+- **object clauses**, in which the head noun is the object of the relative
+  clause.
+- **agent clause**, where the head noun is the relative clause's agent or
+  subject.
+
+In both types of relative clause, the verb is moved from the end of the clause to a position immediately following the verb's auxiliary.
+
+In an object clause, the valency of the verb is reduced by one. In effect, the
+head noun becomes a noun in the clause.
 
 (@) wiingu-ø k-a pirr-u-ø ka wa-j,
     man-erg aux-pst see-an-1st 2.val.1 1s-nom,
     the man that I saw
 
-If the head noun is the agent, a pronoun is used inside the relative clause to
-refer back to it.
+In an agent clause, the valency is not modified. Instead, a pronoun that matches
+the person, plurality, and animacy of the head noun is added to the relative
+clause.
 
 (@) j-a Wuurna-ø nn-uuki-ti yann-u-mi nna-j jurlu-l wa-j ka naj-u-m,
     say.aux-pst Wuurna-erg aux-fut-dub catch-an-3rd 3s-nom turtle-acc 1s-nom 3.val.2 say-an-3rd,
     Wuurna, who might catch a turtle, spoke to me.
 
-## Adverbial Phrases
+# Modifier Positioning
 
-(*)Adverbial Phrase: ap = aux np(s) [val] [manner(s)] v [temporal(s)]
+## Adjectives
 
-Temporal adverbs, which specify the time an action takes place, tend to appear
-following the verb.
+TODO
+
+## Adverbs
+
+Adverbs can be split into two categories:
+
+- Temporal adverbs specify the time a verb takes place
+- Manner adverbs detail the manner in which the verb was conducted
+
+Temporal adverbs usually follow the base verb.
 
 (@) k-a jana-ø jari-rn wiirr-uu-ø yuurli-rna ma,
     go.aux-pst 1s.ch-erg beach-loc go-ch-1st day-rev one,
     Yesterday, I [a child] went to the beach.
 
-Manner adverbs, which specify the manner in which the action was conducted,
-usually appear directly before the verb.
+Manner adverbs usually precede the base verb.
 
 (@) nn-uuki-yii waya-ø pirwa-pirwa-j garrna gann-u-ø,
     pickup.aux-fut-wimp 1pl-erg clothing-pl-nom quickly pickup-an-1st,
