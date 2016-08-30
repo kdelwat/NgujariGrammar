@@ -172,23 +172,37 @@ speaker desires it.
 
 # Predicates
 
-There are three cases for predicates: adjectival, nominal, and locational.
+A **predicate** is a sentence which modifies a noun. There are three types:
+
+- **Adjectival**, in which a noun is modified by an adjective, such as "The
+  grass is green".
+- **Nominal**, where the noun is modified by another noun. This is commonly used
+  for professions, as in "She is a teacher".
+- **Locational**, which assigns a location to a noun, such as "The campsite is
+  in the valley".
+
+The Ngujari language distinguishes between these types and forms each in a different way.
 
 ## Adjectival
 
 (*)Adjectival Predicate: apred = n [adj(s)-pred/n-com]
 
-In an adjectival predicative phrase a verb is not normally required. The noun is
-assigned the same tense as it would be were it the argument to an intransitive
-verb, while the adjective assumes its predicative inflection.
+An adjectival predicate is formed without the use of a verb, and simply requires
+a noun and at least one adjective. The noun is first given the same case as if
+it were a subject^[The subject is the only argument to an intransitive verb.].
+Any adjectives are changed to their predicate form (see
+[morphology](morphology.html#adjectives-and-adverbs)). The adjectives then
+simply follow the noun.
 
 (@) puurna-j birruku-ku,
     sky-nom blue-an,
     The sky is blue.
 
-The adjectival predicative can be counter-intuitively used with a noun, by
-placing the noun into the comitative case. This is usually employed when
-describing a changeable state.
+There is another form of adjectival predicate, in which a noun is used in place
+of an adjective. While this may seem counter-intuitive, the noun in effect
+becomes an adjective. This form is used when describing a changeable state. The
+described noun is treated as above, but the modifying noun is given the
+comitative case.
 
 (@) murta-j gurlu-yi,
     berry-nom freshness-com,
@@ -198,8 +212,9 @@ describing a changeable state.
 
 (*)Nominal Predicate: npred = be.aux n-subj n-obj be
 
-In a nominal predicative phrase, the verb `ngurr` is used. The predicate noun is
-declined as verb's object.
+A nominal predicate is formed using `ngurr`, the verb for "to be". By default,
+`ngurr` has a valence of two, taking an agent and an object. The described noun
+is the agent and the modifying noun is the object.
 
 (@) ngarr-i wa-ø gajangu-j ngurr-u-ø,
     be.aux-pres 1s-erg teacher be-an-1st,
@@ -209,8 +224,9 @@ declined as verb's object.
 
 (*)Locational Predicate: lpred = be.aux n-subj n-loc be
 
-In a locational predicative phrase, `ngurr` is still used, but the predicate
-location is declined in the locative case.
+A locational predicate is formed in almost the same way as a nominal predicate.
+The only difference is that the modifying location is given the locative case,
+rather than the comitative.
 
 (@) k-i wurlki-ø kirujunga-ø ngurr-a-m,
     be.aux-pres village-erg somewhere-loc be-inan-3rd,
