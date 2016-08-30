@@ -234,47 +234,80 @@ rather than the comitative.
 
 # Possession
 
+There are three types of possession in the Ngujari language.
+
+The first two are distinguished by their changeability. **Alienable possession**
+isn't permanent, and is subject to change, whereas **inalienable possession**
+cannot be changed. The difference between the two revolves around culture, and
+is outlined in [possession](pragmatics.html#possession).
+
+The third type is **group possession**, in which something is owned by the tribe
+as a whole. This is formed in a different way to the first two.
+
 ## Alienable
 
-To indicate alienable possession (possession that is not permanent or subject to
-change), the locative case is used in conjunction with the verb `ngurr`. The
-possessed noun appears in the locative case as the subject of the transitive
-form of `ngurr`, with the possessor appearing as the object in the usual case.
+Alienable possession is either **locative-based** or **pronominal**.
 
-(@) ngarr-i mulu-mulu-ka-rn mungu-j ngurr-a-m,
-    be.aux-pres deadfish-pl-dual-loc woman-nom be-inan-3rd,
+In locative-based possession, the verb `ngurr` is used. The possessed noun
+becomes the agent of the verb, while the possessor is given the locative case.
+Unusually, this means that the verb does not have a noun in the object case,
+even though its valence remains the same.
+
+Locative-based possession can be thought of as a noun being on somebody's
+person. Where in English we might say "I have a spear", the literal Ngujari
+translation is closer to "The spear is on me", even if the spear is in fact
+kilometres away. This can be seen in the following example.
+
+(@) ngarr-i mulu-mulu-ka-ø mungu-rn ngurr-a-m,
+    be.aux-pres deadfish-pl-dual-erg woman-loc be-inan-3rd,
     The woman has two dead fish.
 
-## Inalienable
-
-Inalienable possession (possession that is unequivocal) is indicated simply
-through the use of the verb `gurr`.
-
-(@) garr-aa-nga ngungu-j jarta-l ka gurr-u-ø,
-    have.aux-fut-gno mob-nom homeland-acc 3.val.2 have-an-1st,
-    Our mob will always have a homeland.
-
-## Pronominal
-
-A noun phrase can be indicated as possessed through the use of a possessive
-pronoun as an adjective.
+The second form of the alienable possession, pronominal possession, is formed
+through the use of a possessive pronoun. The pronoun is used in the same way as
+an adjective, appearing after the possessed noun.
 
 (@) nn-uma nnaa-ø waju-j yurni nna-lu giinn-u-m,
     admire.aux-pst 3pl.an-erg face-nom beautiful 3s.an-pos admire-an-3rd,
     They admired his beautiful face.
 
-In Ngujari culture, an object can be owned by a mob as a whole. Only inanimate
-objects may be possessed by a mob (with the exception of areas of land).
-Possession is indicated by the particle `tuu`, which appears before the noun. To
-specify the possessing mob, the mob's name is placed immediately after the
-particle. The regular name is used by members of the possessing mob, but the
-honorific name is used for possessions of others. For example, the particle for
-something owned by the Wujanga mob would be *tuu-Wujanga* for a member or
-*tuu-Wujarra* for an outsider.
+## Inalienable
+
+Inalienable possession is indicated through the use of the verb `gurr`. The
+possessor becomes the agent and the possessed noun becomes the object.
+
+(@) garr-aa-nga ngungu-ø jarta-j ka gurr-u-ø,
+    have.aux-fut-gno mob-erg homeland-nom 3.val.2 have-an-1st,
+    Our mob will always have a homeland.
+
+It is important to note that `gurr` is by default trivalent, meaning it takes
+three nouns: an agent, an object, and a **manner**. The manner is a noun in the
+comitative case, and describes the means by which the noun became or is
+possessed. The following example is the same as the above, except a manner is
+specified.
+
+(@) garr-aa-nga ngungu-ø jarta-j yuurrpa-yi ka gurr-u-ø,
+    have.aux-fut-gno mob-erg homeland-nom courage-com 3.val.2 have-an-1st,
+    Our mob will always have a homeland, due to our courage.
+
+## Group
+
+In Ngujari culture, an object can be owned by a mob as a whole. With the
+exception of areas of land, only inanimate nouns may be possessed by a mob.
+
+Group possession is formed using the special particle *tuu*, which appears
+before the noun. To specify the possessing mob, the mob's name is placed
+immediately after the particle.
 
 (@) nn-i-ju waya-ø tuu-Gurnu jaku nnalu-j muu-ma naa tinn-u-ø,
     protect.aux-strimp 1pl-erg pos-gurnu precious land-nom spirit-inst 2.val.3 protect-an-1st,
     We must protect our [the Gurnu mob's] precious land with vigour.
+
+The regular name is used by members of the possessing mob, but the honorific
+name is used for possessions of others^[Culture dictates that each mob has two
+names: an "insider" name and an "outsider" name. To use the insider name without
+being a member of the mob is a grave offence.]. For example, the combined
+particle for something owned by the Wujanga mob would be *tuu-Wujanga* for a
+member or *tuu-Wujarra* for an outsider.
 
 # Interrogative
 
