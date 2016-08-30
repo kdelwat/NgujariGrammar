@@ -311,35 +311,49 @@ member or *tuu-Wujarra* for an outsider.
 
 # Interrogative
 
-## Polar Questions
+**Interrogatives** are simply questions. There are two types of interrogatives:
 
-Polar questions are syntactically the same as a factual statement,
-except they are expressed with a rising tone at the beginning of the
-question.
+- **Polar**, which have an affirmative or negative answer.
+- **Non-polar**, which require a more detailed response.
+
+## Polar
+
+Polar questions are extremely easy to form. They are expressed as a factual statement, but with a rising tone at the beginning of the question.
 
 (@) nn-uuki kupa-kupa-ø gaypa-gaypa-rn narnn-u-m?,
-    fly.aux-fut bird-pl-erg mountain-pl-loc fly-an-3rd,
+    ↗ fly.aux-fut bird-pl-erg mountain-pl-loc fly-an-3rd,
     Will the birds fly to the mountains?
 
-## Non-Polar Questions
+## Non-Polar
 
-One way of forming a non-polar question is using an interrogative
-pronoun as a verb's argument, with no syntactic change taking place.
+The primary way of forming a non-polar question is through the use of
+interrogative pronouns (such as `piima`). The interrogative takes the place of a
+noun in a verb phrase, but is not assigned a case.
 
-(@) kiru ngarr-i wumpa-j j-i palyaj-a-m nnu-ø wurlki-j ngurr-a-m,
-    where be.aux-prs path-nom leadto.aux-prs leadto-inan-3rd 3s.inan-erg village-nom be-inan-3rd,
+(@) k-a pii munnanna-rn wa-yi naa wiirr-u-m,
+    go.aux-pst who river-loc 1s.an-com 2.val.3 go-an-3rd,
+    Who went to the river with me?
+
+This method of questioning can be used in any type of sentence, not just basic
+clauses. The following example shows its use in a locational predicate which
+contains a relative clause. The interrogative pronoun, `kiru`, is moved to the
+front of the sentence to highlight its importance.
+
+(@) kiru ngarr-i wumpa-ø  j-i palyaj-a-m nnu-ø wurlki-j ngurr-a-m,
+    where be.aux-pres path-erg leadto.aux-prs leadto-inan-3rd 3s.inan-erg village-nom be-inan-3rd,
     Where is the path that leads to the village?
 
-To question a certain word in a statement, the particle `yuu` can be
-placed before the word.
+A less-common way to ask a non-polar question requires the particle *yuu*. By
+placing the particle ahead of a word in a statement, the speaker questions that
+word.
 
 (@) k-aa yuu-nnara-ø nurtwu-j panwa-rnu mirr-uu-m,
     bring.aux-fut int-3dual.an-erg food-nom fire-ori bring-ch-3rd,
-    Will those two children bring the food to the fire?
+    Will it be those two children who bring the food to the fire?
 
 (@) nn-i wa-ø yuu-gurlurni parnti-j jinn-u-mi,
     eat.aux-pres 3s-erg int-fresh kangaroomeat-nom eat-an-3rd,
-    Is he eating fresh kangaroo meat?
+    Is the kangaroo meat he is eating fresh?
 
 # Comparative
 
