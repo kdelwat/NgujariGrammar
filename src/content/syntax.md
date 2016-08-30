@@ -357,17 +357,28 @@ word.
 
 # Comparative
 
-Ngujari contains locational-type comparatives. This means that the *standard*
-noun, or the noun to be judged against, is marked in the revertive case.
-Comparatives do not use a verb, and are always positive (i.e. more adjective
-than the standard). The adjective is in the predicative inflection.
+A comparative is a sentence which compares one noun to another, using an
+adjective. Ngujari uses **locational-type comparatives** which are verbless. The
+noun to be judged against (the **standard noun**) is given a locational case,
+while the noun that is being judged is given the case that it would assume as
+the subject of an intransitive verb. The two nouns are then followed by the
+adjective, which is in the predicate form (see
+[morphology](morphology.html#adjectives-and-adverbs)).
+
+If the judged noun is 'more' of the adjective than the standard noun, the
+revertive case is used. If they are the same, the locative case is used.
 
 (@) nna-j wa-rna yam-u,
     3s-nom 1s-rev tall-an,
     He is taller than me.
 
-For comparatives in relative clauses, the adjective is fronted and is followed
-by the arguments.
+(@) gungaa-ø muyu-rn yurli-la,
+    axe-erg spear-loc dull-inan,
+    The axe and spear are equally as dull.
+
+Comparatives may be used in relative clauses. The adjective becomes the first
+word in the clause and is followed by the nouns. One of the nouns is replaced by
+a pronoun as usual.
 
 (@) k-a nnalji-ø junn-u nna-ø wiinguurki-rna yuki-j ka giirr-u-m,
     win.aux-pst dingo-erg fast-an 3s-erg boy-rev race-nom 2.val.1 win-an-3rd,
