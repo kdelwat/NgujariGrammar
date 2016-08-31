@@ -386,66 +386,79 @@ a pronoun as usual.
 
 # Conditional
 
-There are two types of conditionals: implicative and predictive. The protasis
-(condition) and apodosis (outcome) are modified in different ways.
+A conditional places a condition on another statement. They are formed through
+two verb phrases, one representing the condition (or protasis) and the other
+representing the outcome (or apodosis). There are two types of conditional:
 
-implicative
-
-:   The conditional is a universal truth. Whenever the condition is
-    true, the outcome is also true.
-
-predictive
-
-:   The conditional is a prediction. If the condition occurs, the
-    outcome will occur.
+- **implicative**, where the conditional represents a universal truth. Whenever
+  the condition is true, the outcome is also true. It is important to remember
+  that the implicative form is always true. A statement such as "When the wind
+  blows, the leaves rustle" meets this criteria, whereas "If you go there,
+  you'll be attacked" does not.
+- **predictive**, where the conditional represents a prediction. This is the
+  more general form, and can be used without worrying about universal truth.
 
 To form both conditionals, the condition verb phrase appears first, followed
-immediately by the outcome verb phrase. There is no morpheme with equivalent
-meaning to "if". However, the outcome is always placed in the subjunctive mood
-and the present tense.
+immediately by the outcome verb phrase. No connector is necessary between the
+two clauses (i.e. there is no equivalent to "if"). The outcome phrase is always
+placed in the subjunctive mood and present tense.
 
-In an implicative conditional, the condition is given the gnomic mood. The
-statement must therefore follow the usual rules of the gnomic, in that it must
-state an undisputable truth. The condition is always in the present tense.
+In an implicative conditional, the condition is given the gnomic mood and the
+present tense. The statement must therefore follow the usual rules of the
+gnomic, in that it must state an undisputable truth.
 
 (@) k-i-nga kunii-ø mu-rn naa yarr-uu-n j-i-tirlu kunii-j ka mulj-awuu-n,
     fall.aux-prs-gno 2dual.ch-erg water-loc 1.val.2 fall-ch-2nd wet.aux-prs-sbjv 2dual-ch-nom 2.val.1 wet-ch-2nd,
     If you two fall in the water, you will both get wet.
 
-In a predictive conditional, the condition is usually not given a mood. However,
-if the phrase is counterfactual, in that the condition is not seen as likely,
-the condition occurs in the dubitative mood. Usually, the condition will be in
-the future tense.
+In a predictive conditional, the condition is usually not given a mood, but can
+assume any tense.
 
 (@) nn-uuki palwuuwa-j ka girnn-aa-mi k-i yannu-ø nna-j ji wurr-a-rn,
     break.aux-fut branch-nom 2.val.1 break-inan-3rd strike.aux-pres dem.sg.inan-erg 3s-an-nom 0.val.2 strike-inan-3rd,
     If that branch breaks, it will strike him.
 
-(@) k-aa-tila nna-ø maaju-j yirn parr-u-m ngarr-tiru nurtwa-nurtwa-rn yuni waya-j ngurr-a-m,
+There is one exception to this rule. If the condition is seen as unlikely, the
+phrase is a **counterfactual**. In this case, the condition is given the
+dubitative mood. Usually, the condition will then be in the future tense.
+
+(@) k-aa-tila nna-ø maaju-j yirn parr-u-m ngarr-tiru nurtwa-nurtwa-rn yuni
+    waya-j ngurr-a-m,
     hunt.aux-fut-dub 3s.an-erg kangaroo-nom completedly hunt-an-3rd be.aux-subj food-pl-loc lots 1pl-nom be-inan-3rd,
     If he were to successfully hunt the kangaroo [unlikely], we would have lots of food.
 
 # Negative
 
-There are two types of negation: clausal, where the entire clause is negated,
-and constituent, where one noun is negated.
+A negative simply inverts the meaning of a part of a sentence. The primary form
+of negation is the **clausal negative**, in which an entire clause is negated.
+However, a minor form is the **constituent negative**, where only one noun is
+negated.
 
-The formation of the clausal negative requires the negative particle that
-corresponds to the class of the clause's verb. In a standard negative clause,
-the particle follows the verb's auxiliary. However, in imperative clauses it
-precedes the auxiliary. Qualifiers such as "never" are used following the
-sentence, as stand-alone utterances.
+To form the clausal negative, the negative particle must be used^[The negative
+particle corresponds to the class of the clause's verb. See the morphology
+chapter for more.].
+
+In a standard negative clause, the particle follows the auxiliary of the verb.
 
 (@) k-a tu nna-ø naarla wiirr-u-m,
     go.aux-pst neg 3s.an-erg there go-an-3rd,
     He didn't go there.
 
+However, in an imperative clause (one that uses the weak or strong imperative
+mood, see [tense and mood](morphology.html#tense-and-mood)), the particle is
+instead placed before the auxiliary.
+
+In all clausal negatives, **qualifiers** can be used as stand-alone utterances,
+which follow the sentence. A qualifier is a word such as `wulnni` ("never")
+which modifies the negative.
+
 (@) ti j-i-yuu ku-j waa yanj-awu-n. wulnni,
     neg steal.aux-strimp 2s-nom 3.val.1 steal-an-2nd never,
     You must never steal.
 
-The consituent negative is applicable to clauses using `gurr`. It is formed
-using the special argument *tunna* in the comitative slot of the verb.
+The consituent negative can only be used in sentences which use the verb `gurr`.
+To form the negative, the special particle *tunna* is used as a noun in the
+comitative position of the verb, but is not inflected.
 
 (@) rr-i gunnari-ø guwa-guwa-j tunna gurr-a-m,
     have.aux-prs tree-erg leaf-pl-nom none have-inan-3rd,
