@@ -9,14 +9,21 @@ Finally, the **prosody** of the language will be considered, which incorporates
 sound on a level higher than individual phonemes, including stress and
 intonation.
 
-# Phonetic Inventory
+A central idea of phonology is the relationship between phonemes and
+**allophones**. A phoneme is **distinctive**, meaning that two words with only
+one phoneme changed are considered completely different words. On the other
+hand, each phoneme can have multiple allophones, which are the actual sounds
+that results in the specific environment they are found in.
 
-## Consonants
+# Consonants
 
-In terms of phonology, Ngujari has a rich consonantal inventory featuring a
-large series of coronal consonants (both laminal and apical) and multiple
-rhotics. The following table shows the consonants and their orthographic
-representation in italics (if different from the IPA).
+Ngujari has a rich **consonantal inventory**, or set of consonant phonemes.
+While some of the sounds are common to English, others are not. The following
+table shows these consonants. The first symbol in each pair is the phoneme,
+expressed in [International Phonetic Alphabet
+(IPA)](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) notation.
+The following symbol, in brackets, is the written representation of that
+phoneme. If there is no symbol in brackets, this is the same as the IPA form.
 
 |                     | bilabial | alveolar | post-alveolar | retroflex | palatal | velar  |
 |---------------------|----------|----------|---------------|-----------|---------|--------|
@@ -26,6 +33,18 @@ representation in italics (if different from the IPA).
 | fricative           |          |          | ʒ (j)         |           |         |        |
 | approximate         | w        |          |               | ɻ (r)     | j (y)   |        |
 | lateral approximate |          | l̺ (l)    |               | ɭ̺ (rl)    |         |        |
+
+The **retroflex** consonants (*rt, rn, r, rl*) are pronounced with the tongue
+curled back in the mouth, just behind the **alveolar ridge**, or the ridge
+between the roof of the mouth and the teeth. While the written representation of
+some of these requires two characters, it is important to remember that they are
+still one sound.
+
+The **coronal** consonants are divided into two types. **Laminal** consonants,
+which are indicated by a box under the phonetic representation, are created by
+pressing the tongue, just beyond the tip, against the roof of the mouth. The
+**apical** consonants, indicated by an open box, are created the same way,
+except only the very tip of the tongue is used.
 
 ## Vowels
 
