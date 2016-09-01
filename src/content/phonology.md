@@ -9,13 +9,15 @@ Finally, the **prosody** of the language will be considered, which incorporates
 sound on a level higher than individual phonemes, including stress and
 intonation.
 
+# Phonemes
+
 A central idea of phonology is the relationship between phonemes and
 **allophones**. A phoneme is **distinctive**, meaning that two words with only
 one phoneme changed are considered completely different words. On the other
 hand, each phoneme can have multiple allophones, which are the actual sounds
 that results in the specific environment they are found in.
 
-# Consonants
+## Consonants
 
 Ngujari has a rich **consonantal inventory**, or set of consonant phonemes.
 While some of the sounds are common to English, others are not. The following
@@ -48,24 +50,16 @@ except only the very tip of the tongue is used.
 
 ## Vowels
 
-The vowel palette is very restricted, limited to just a, i, and u, as well as
-their lengthened versions. The long vowels are contrastive in all locations.
-These phonemes are found in the following table.
+In contrast to the large number of consonants, Ngujari has very few vowels. The
+basic vowels are a, i, and u, but all are **contrastive** in their lengthened
+form.
 
 |      | front | back  |
 |------|-------|-------|
 | high | i, iː | u, uː |
 | low  | a, aː |       |
 
-Orthographically, the short vowels are expressed according to their IPA
-representation. Long vowels are simply the short vowel doubled.
-
-The front vowels (i and a) are phonetically tense. Both have a nasalised
-allophone.
-
-The back vowel u is divided allophonetically into two sounds: the default u, and
-the somewhat centralised which tends towards the sound and is accordingly more
-lax than the default.
+When written, the short forms are the same as their IPA representation, while the long vowels are simply the short vowels repeated twice.
 
 # Phonotactics
 
