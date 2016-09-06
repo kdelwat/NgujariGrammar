@@ -83,6 +83,7 @@ h2.page-sub-title {
 
 table {
     @extend .table;
+    overflow-x: auto;
 }
 
 // Style navbar
