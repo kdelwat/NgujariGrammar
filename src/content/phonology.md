@@ -129,7 +129,7 @@ nasals, being pronounced with more use of the nose than usual.
 The retroflex approximant *r* disappears between identical regular vowels,
 forming one lengthened vowel.
 
-> adult `garanya` ⇒ *gaːn̺ja*\
+> adult `garanya` ⇒ *gaːn̺ja*
 
 However, if either of the two vowels is lengthened, the approximant remains.
 
@@ -152,7 +152,7 @@ sufficiently formed to be included as an individual phoneme; the rest are in
 the process of undergoing the differentiation and are known as allophones.
 
 > to drop `gukarr` ⇒ *gukaɾ̺*\
-> tooth `parrnawa` ⇒ *̬p̬aɾn̺awa*\
+> tooth `parrnawa` ⇒ *p̬aɾn̺awa*\
 > dangerous `tuwilwa` ⇒ *t̬uwil̺wa*
 
 The retroflex phoneme *rt* is an exception: as retroflex consonants cannot
@@ -213,6 +213,6 @@ bimoraic, the first syllable is stressed. Otherwise, the second is stressed.
 the syllable with the 4th mora, 6th mora, and so on. However, if two subsequent
 syllables would be stressed, the second is skipped.
 
-> seal `bilru` ⇒ *bil̺ɻ*uˈ
-> tongue `jaajannalu` ⇒ *ʒaːˈʒan̻aˌl̺u*
+> seal `bilru` ⇒ *bil̺ɻuˈ*\
+> tongue `jaajannalu` ⇒ *ʒaːˈʒan̻aˌl̺u*\
 > pride `miinaatirra` ⇒ *miːˈn̺aːt̺iɾ̺aˌ*
