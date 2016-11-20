@@ -59,69 +59,111 @@ form.
 | high | i, iː | u, uː |
 | low  | a, aː |       |
 
-When written, the short forms are the same as their IPA representation, while the long vowels are simply the short vowels repeated twice.
+When written, the short forms are the same as their IPA representation, while
+the long vowels are presented as digraphs, where the short vowel is repeated
+twice.
 
 # Phonotactics
 
-## Syllables and Morae
+**Phonotactics** incorporates phonetic features such as sound changes
+(including allophones), permissible phoneme arrangements, and prosody.
+
+## Phonological Constraints
 
 The structure of Ngujari words is simple, with syllables taking the form CV(C):
-one consonant is followed by one vowel and an optional consonant (dependent on
+one consonant is followed by one vowel and an optional consonant (dependant on
 permitted consonant clusters). A root word is usually between two and four
 syllables long, plus any affixes, which tend to be single-syllable.
 
-Words can be broken into *morae*. A syllable containing a short vowel is worth
-one mora, but those containing long vowels are worth two. This distinction
-becomes important when dealing with prosody in .
+### Consonants
 
-## Parts of Speech
+The main form of phoneme restriction is found in **consonant clusters**, the
+allowable sequences of consonants which appear without being separated by a
+vowel. The following combinations are the only allowable clusters:
 
-Some additional phonotactic restrictions are placed on specific parts of speech:
+-   rhotic/liquid + non-retroflex nasal, (*walma*, *garrna*)
+-   rhotic/liquid + non-rhotic approximant (*wiilyu*, *parlwa*)
+-   nasal + non-rhotic approximant/stop (*bantuu*)
+-   approximant + stop (*gaypa*)
+-   retroflex + stop (*karlpii*)
 
--   Nouns always end in a vowel.
--   Verbs always end in a consonant.
+In addition, retroflex consonants are never found at the beginning of a word
+and approximants are never found at the end of a word.
 
-## Vowels
+### Part of Speech
 
-The *u* phoneme becomes centralised following the bilabial consonants p, m, and
-w.
+There are some minor phoneme restrictions which depend upon part of speech.
 
-The i and a phonemes are nasalised before alveolar and post-alveolar nasals.
+For verbs, as described
+in [morphology](https://www.cadelwatson.com/ngujari/content/morphology.html),
+the word must fall into one of three classes. This means that they must end in
+*rr*, *j*, or *nn*.
 
-## Consonants
+Nouns must always end in a vowel, to avoid the creation of illegal consonant
+clusters after adding case suffixes.
 
-### Positioning
+## Allophonetic Rules
 
-There are some restrictions placed on consonant clusters. The following
-combinations are the only allowable clusters:
+Sound changes apply to the **realisation** of phonemes. While in written form
+the phoneme appears the same, in different circumstances it is pronounced as
+different allophones.
 
--   rhotic/liquid + non-retroflex nasal
--   rhotic/liquid + non-rhotic approximant
--   nasal + non-rhotic approximant/stop
--   approximant + stop
--   retroflex + stop
+### Vowels
 
-In terms of other restrictions, approximants are never found at the end of a
-word.
+The *u* phoneme becomes centralised following the bilabial consonants *p*, *m*,
+and *w*, meaning the pronunciation migrates towards the center of the mouth.
 
-### Rhotics
+> happy `pupa` ⇒ *püpa*\
+> food `nurtwu` ⇒ *nuʈ̺wü*
 
-The retroflex approximant disappears between identical regular vowels, forming
-one lengthened vowel.
+The *i* and *a* phonemes are nasalised before alveolar and post-alveolar
+nasals, being pronounced with more use of the nose than usual.
 
-### Voicing
+> never `wulnni` ⇒ *wül̺n̻ĩ*\
+> reed `kanaa` ⇒ *kan̺ãː*
 
-The voicing process is relatively new to the language, and accordingly not much
-variation is present. Generally, plosives are becoming initially voiced.
-However, in practice the voiced plosive g is the only new voiced consonant
-sufficiently formed to be included as an individual phoneme; the rest are in the
-process of undergoing the differentiation. In the case of the phoneme, only the
-alveolar form undergoes voicing, as the retroflex cannot begin a word.
+### Consonants
+
+#### Rhotics
+
+The retroflex approximant *r* disappears between identical regular vowels,
+forming one lengthened vowel.
+
+> adult `garanya` ⇒ *gaːn̺ja*\
+
+However, if either of the two vowels is lengthened, the approximant remains.
+
+> head `giriirki` ⇒ *giɻiːʈ̺ki*
+
+The retroflex approximant *r* becomes the retroflex plosive *rt* before another
+plosive consonant.
+
+> wood `taarirki` ⇒ *taːɻiʈ̺ki*
+
+#### Voicing
+
+The voicing process is relatively new to the language. Voicing occurs when an
+unvoiced plosive becomes its voiced equivalent. Recently, plosives are becoming
+initially voiced^[The change occurs only if the phoneme is the first in the
+word].
+
+In practice, the voiced plosive *g* is the only new voiced consonant
+sufficiently formed to be included as an individual phoneme; the rest are in
+the process of undergoing the differentiation and are known as allophones.
+
+> to drop `gukarr` ⇒ *gukaɾ̺*\
+> tooth `parrnawa` ⇒ *̬p̬aɾn̺awa*\
+> dangerous `tuwilwa` ⇒ *t̬uwil̺wa*
+
+The retroflex phoneme *rt* is an exception: as retroflex consonants cannot
+begin words, there has been no initial voicing.
 
 ## Historical Sound Changes
 
+*Move to dedicated chapter*
+
 Ngujari differs phonologically from Proto-Pama-Nyungan only slightly. The
-following is a list of sound changes that have occured:
+following is a list of sound changes that have occurred:
 
 -   Apicalised post-alveolar plosive (t̻) becomes voiced post-alveolar
     fricative (ʒ).
@@ -135,17 +177,42 @@ A major difference occurs in the case of lengthened vowels, which can
 differentiate words in all positions, rather than just the first syllable as in
 the protolanguage.
 
-# Prosody
+## Prosody
 
-Ngujari has a rich prosodic system incorporating stress, intonation, and tempo.
-Stress is dealt with here, but intonation and tempo are left to Part 2 in the
-discussion on pragmatics.
+**Prosody** is the way phonemes are spoken as a whole, including within words and
+sentences. Ngujari has a rich prosodic system incorporating stress, intonation,
+and tempo. The purely phonetic aspects of the system are dealt with here, but
+intonation and tempo have many pragmatic uses which are left to
+the [pragmatics](pragmatics.html) chapter.
 
-## Stress
+### Morae
 
-Stress follows a simple process. The primary stress is placed on the second mora
-of the word. If that mora is part of the first syllable (i.e. the first syllable
-has a long vowel rendering it bimoraic), the first syllable is stressed.
-Secondary stress is then placed on morae at even intervals, on the 4th, 6th,
-etc. However, if the secondary stress would fall on the second mora of a
-bimoraic syllable, it is skipped.
+Every word can be broken into **morae**, which are calculated using syllables.
+A syllable containing a short vowel is worth one mora, but those containing
+long vowels are worth two. Syllables with one mora are known as **monomoraic**,
+while those with two are known as **bimoraic**.
+
+> white `tumwaku` ⇒ 111\
+> cloud `rrurtawalu` ⇒ 1111\
+> egg `kupaarki` ⇒ 121
+
+The arrangement of mora becomes important when dealing with stress and prosody
+as a whole, particularly in the [poetic register](pragmatics.html#poetry).
+
+### Stress
+
+**Stress** is the weight placed on each syllable. A stressed syllable carries
+more weight than an unstressed syllable and therefore stands out.
+
+In Ngujari, stress follows an algorithmic process. The **primary stress**^[The
+heaviest emphasis] is placed on the second mora of the word. If that mora is
+part of the first syllable (i.e. the first syllable has a long vowel and is
+bimoraic, the first syllable is stressed. Otherwise, the second is stressed.
+
+**Secondary stress** is then placed on morae at even intervals, appearing on
+the syllable with the 4th mora, 6th mora, and so on. However, if two subsequent
+syllables would be stressed, the second is skipped.
+
+> seal `bilru` ⇒ *bil̺ɻ*uˈ
+> tongue `jaajannalu` ⇒ *ʒaːˈʒan̻aˌl̺u*
+> pride `miinaatirra` ⇒ *miːˈn̺aːt̺iɾ̺aˌ*
