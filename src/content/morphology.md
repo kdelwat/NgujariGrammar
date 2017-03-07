@@ -2,6 +2,44 @@
 % Cadel Watson
 % 28/8/2016
 
+**Morphology** is the study of word forms and the way words are adapted to
+different circumstances.
+
+Words in Ngujari begin as stems: individual morphemes^[A **morpheme** is the
+smallest possible unit of meaning.] that cannot be used in their base form. A
+speaker must add a number of suffixes to the stem to indicate characteristics
+such as gender, in the case of nouns, or tense, in the case of verbs. This
+process is known as **inflection**.
+
+The fact that stems cannot be used without adding further morphemes makes
+Ngujari **polysynthetic**. The language is predominantly **agglutinative**,
+meaning that words are inflected through suffixes alone. However, in a handful
+of cases words are instead inflected through **clitics**, separate words which
+are "attached" to the stem by their relative position in the sentence.
+
+Consider the following sentence:
+
+(@) k-a wa-Ø jari-rn wiirr-u-Ø,
+    go.AUX-PST 1s-ERG beach-LOC go-AN-1ST,
+    I went to the beach.
+
+The sentence contains three stems: `wiirr` (*to go*), `jari` (*beach*), and `wa`
+(*I*). However, these stems cannot be used alone. Each has at least one
+additional morpheme.
+
+- `wa` is inflected into the ergative case, through the **null morpheme**^[
+  Although it cannot be heard in the spoken language, the null morpheme is
+  considered to be a morpheme due to its role in differentiating different word
+  forms.], a morpheme which has no sound.
+- `jari` is inflected into the locative case, through the suffix *-rn*.
+- `wiirr` is inflected into the animate adult gender, through the suffix *-u*,
+  and the first person singular, through the null morpheme. It also has an
+  auxiliary (discussed later), `k`, which is inflected into the past tense
+  through the suffix *-a*.
+
+In this chapter, each class of word will be detailed, along with its inflections
+and characteristics.
+
 # Nouns
 
 ## Gender
