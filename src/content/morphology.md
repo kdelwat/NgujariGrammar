@@ -42,16 +42,27 @@ and characteristics.
 
 # Nouns
 
+Nouns in Ngujari refer to concepts which exist regardless of time. Whereas a
+verb may specify an action, a noun refers to a concrete or abstract *object*.
+
+Structurally, a noun has a number of important properties. It must assume one
+of the four **genders**, which then lead to different verb conjugations. Nouns
+themselves must be declined according to **case** and **plurality**.
+
 ## Gender
 
-Ngujari has four genders: child, adult, elder (grouped together as animate), and
-inanimate. Gender is assigned semantically and changes the morphosyntactic
-alignment of the sentence as well as posessives.
+Nominal gender^[**Nominal** means relating to nouns.] is assigned semantically
+to nouns, based on their meaning. While the form of a noun itself does not
+change based on gender, the class has a number of important effects, including
+changing morphosyntactic alignment, possessives selection, and verb
+conjugation. These effects are discussed in greater detail later.
 
-The animate gender is given to people, animals, and Dreamtime objects. For
-example, `Yawirra`, the concept of the Land, is considered animate, as are parts
-of the body with a sacred meaning. The inanimate gender applies to all other
-nouns. shows some examples of the distinction.
+Ngujari has a dual-gender system. The major distinction is between the animate
+and inanimate genders. The animate gender is assigned to people, animals,
+spiritual locations, and many abstract concepts. For example, `Yawirra`, the
+concept of the Land, is considered animate, as are parts of the body with a
+sacred meaning. The inanimate gender applies to all other nouns. The following
+table shows some examples of the distinction.
 
 | animate                            | inanimate           |
 |------------------------------------|---------------------|
@@ -63,13 +74,60 @@ nouns. shows some examples of the distinction.
 | bushfire *panwawa*                 | sunset *kii*        |
 | a specific sacred site *Narriirna* | rain *rrurta*       |
 
-Within the animate there are three genders, each representing a different stage
-in life. This distinction is important in areas such as pronouns and verbal
-inflection. An animate noun is assigned to a stage based on its social position.
-Those who are yet to undergo the adulthood ceremony (those under roughly 14 in
-the case of females and 16 in the case of males) are assigned the child gender,
-while those who have become elders receive the elder gender. All other ages, and
-animate nouns that are not human, are grouped into the adult gender.
+The animate-inanimate distinction partially determines morphosyntactic
+alignment. Consider the following example, in which two animate pronouns are
+the subject and object of transitive phrase.
+
+(@) nn-uma jana-j nna-l jinn-arruu-Ø,
+    eat.AUX-PST 1s.child-NOM 3s.adult-ACC eat-AN-1ST,
+    I (a child) ate it (an animate object).
+
+The two animate pronouns cause the sentence to assume the nominative-accusative
+alignment. If instead the object was inanimate, the sentence would decline in
+the ergative-nominative alignment:
+
+(@) nn-uma jana-Ø nnu-j jinn-arruu-Ø,
+    eat.AUX-PST 1s.child-ERG 3s.inan-NOM eat-AN-1ST,
+    I (a child) ate it (an inanimate object).
+
+While this is the primary gender distinction, there is a secondary subdivision.
+Within the animate there are three genders used only for referring to humans,
+each representing a different stage of life: child, adult, and Elder. These
+genders are important in determining pronouns and verbal inflection.
+
+Whereas animate/inanimate is a class defined once for a noun, the
+child/adult/Elder gender is mutable, with a person assigned to one of the
+genders based on social position.  Those who are yet to undergo the adulthood
+ceremony (under the age of roughly fourteen in the case of females and sixteen
+in the case of males) are assigned the child gender, while those who have
+become Elders of the mob receive the Elder gender. All other ages are grouped
+into the adult gender.
+
+The default gender in the stage distinction is adult. All non-human animate
+nouns are treated as if they are members of the adult class for purposes of
+verbal conjugation.
+
+The following pair of examples demonstrates the role of the stage distinction
+in verbal conjugation. The same sentence is conjugated for both a group of
+children and a group of adults.
+
+(@) k-aa juu-Ø kiru wiirr-uu-Ø yuurli-mu,
+    go.AUX-FUT 1pl.child-ERG where go-CHILD-1ST day-ORI,
+    Where will we (a group of children) go tomorrow?
+
+(@) k-aa waya-Ø kiru wiirr-u-Ø yuurli-mu,
+    go.AUX-FUT 1pl.adult-ERG where go-ADULT-1ST day-ORI,
+    Where will we (a group of adults) go tomorrow?
+
+The stage distinction is also used in declining predicate adjectives.
+
+(@) nnarta-j pupa-tuu,
+    3s.child-NOM happy-CHILD,
+	The child is happy.
+
+(@) Wiirrutii-j pupa-iiwa,
+    Wiirrutii-NOM happy-ELDER,
+	Wiirrutii (an elder) is happy.
 
 ## Cases
 
