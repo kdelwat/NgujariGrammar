@@ -49,6 +49,12 @@ Structurally, a noun has a number of important properties. It must assume one
 of the four **genders**, which then lead to different verb conjugations. Nouns
 themselves must be declined according to **case** and **plurality**.
 
+Nouns can be used as part of a sentence without any supporting morphemes; they
+do not require articles or modifiers to assume meaning. Predominantly, nouns are
+used as part of a verb phrase. They are distinguished from other word classes by
+their ability to assume the role of subject in such verb phrases, whereas
+constructions like gerunds cannot.
+
 ## Gender
 
 Nominal gender^[**Nominal** means relating to nouns.] is assigned semantically
@@ -237,13 +243,21 @@ shows the declensions of the noun `naju`.
 | revertive    | najurna | "orientated away from the rock" |
 | locative     | najurn  | "at the rock"                   |
 
-# Plurality
+## Plurality
 
-By default, nouns are singular. Plurals are formed through reduplication, with
-the undeclined noun repeated twice. Case suffixes are then applied to the end of
-the reduplicated form. There are two forms of plural, which differentiate dual
-and non-dual plurality. The default case is non-dual, but the clitic *ka*
-following the reduplicated noun before any adjectives indicates the dual form.
+Plurality refers to the number of a noun present. A singular noun has only one
+of its kind present, while a plural noun has multiple. The Ngujari language
+distinguishes between singular, plural, and dual (two objects). By default, nouns are singular.
+
+Plurals are formed through the process of reduplication^[Repeating a part or
+whole of a word], with the undeclined noun repeated twice. The necessary case
+suffixes are then applied to the end of the reduplicated form.
+
+The process differs slightly depending on whether there is dual or non-dual
+plurality. For non-dual, the entirety of the noun is simply reduplicated. The
+same occurs for the dual, but the clitic *ka* follows the reduplicated noun
+before any adjectives.
+
 Some examples of regular plurals can be found in the following table.
 
 | meaning | singular | plural          | dual               |
@@ -253,9 +267,8 @@ Some examples of regular plurals can be found in the following table.
 | berry   | murta    | murta-murta     | murta-murta-ka     |
 | dingo   | nnalji   | nnalji-nnalji   | nnalji-nnalji-ka   |
 
-There are two exceptions to plural formation. Firstly, if the noun ends in a
-consonant or consonant cluster, it is removed before reduplication. Secondly,
-some animate nouns have irregular plural forms, as below.
+While the process of plural formation is usually regular, some animate nouns
+have irregular plural forms, as below.
 
 | meaning      | singular     | plural       | dual            |
 |--------------|--------------|--------------|-----------------|
@@ -267,7 +280,7 @@ some animate nouns have irregular plural forms, as below.
 | sacred place | Yawirrannalu | Yawirrannala | Yawirrannala-ka |
 
 In addition, some nouns are inherently both singular and plural and do not adopt
-a special plural form. A handful of examples follow.
+a special plural form. A handful of examples follows.
 
 | meaning    | word       |
 |------------|------------|
@@ -276,6 +289,51 @@ a special plural form. A handful of examples follow.
 | blood      | wirra      |
 | rain cloud | rrurtawalu |
 | leaf       | nnaawi     |
+
+There is no distinction between count nouns, which can be specifically counted,
+and mass nouns, which cannot. The number of the noun present can be specified
+through the usual adjective system.
+
+> rock `naju`\
+> ⇒ five rocks `yi naju`\
+> ⇒ a handful of rocks `ayi naju`
+
+
+## Proper nouns
+
+Proper nouns are the names of specific objects, usually people. They are most
+commonly found referring to members of the speaker's mob or extended
+relationship network. However, many spiritual concepts in the Dreamtime are
+referred to by proper nouns, which are capitalised for clarity.
+
+Proper nouns are structurally identical to regular nouns, except that they lack
+the restriction on their final syllable and can end in a consonant. In this
+instance, the usual suffixes are added to signify case after reduplicating the
+final vowel in the noun.
+
+(@) k-a girlipuu-girlipuu-ø Yurluj-urn naa yarr-a-m,
+    fall.aux-pst mango-pl-erg Yurluj-loc 1.val.2 fall-inan-3rd,
+    The mangoes fell on Yurluj.
+
+However, proper nouns are unique in that they do not always require inflection
+for grammatical case. Speakers will only decline proper nouns if the sentence
+would be otherwise ambiguous. In the following sentence, it is obvious that the
+proper noun takes the nominative position and it is not inflected.
+
+(@) j-aa munna-ø Parra naju-rna nakij-a-m,
+    move.aux-fut stream-erg Parra-nom rock-rev move-inan-3rd,
+    The stream will take Parra away from the rock.
+
+The need to distinguish proper nouns using case inflections usually arises when
+two proper nouns are in the same sentence.
+
+(@) nn-i-yii Annurra-ø Najii-j yiinn-u-mi,
+    help.aux-pres-wimp Annurra-erg Najii-nom help-an-3rd,
+    Annurra should help Najii.
+
+Even in circumstances where the meaning of the sentence would be unambiguous
+without case inflection, the speaker may choose to inflect if they are using a
+non-standard word order.
 
 # Verbs
 
